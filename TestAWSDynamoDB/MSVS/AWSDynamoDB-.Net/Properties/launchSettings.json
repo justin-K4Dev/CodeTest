@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AWSDynamoDB-.Net": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

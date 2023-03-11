@@ -1,0 +1,15 @@
+﻿{
+  "isUseLocalDB": false,
+
+  "LocalDB": {
+    "ServiceURL": "http://localhost:8000"
+  },
+
+  "AWS": {
+    "Profile": "",
+    "AccessKey": "AKIA3UC3QYDR62U6OUGV",
+    "SecretKey": "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",
+    "Region": "us-west-1",
+    "ServiceURL": "https://34.201.5.231:8000"
+  }
+}
