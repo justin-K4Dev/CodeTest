@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Node.js</Name>
+    <RootNamespace>Node.js</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c2458409-59bd-4f64-a384-e2322a436c64</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Coding.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assert.js" />
+    <Compile Include="BlueBird\MySQL.js" />
+    <Compile Include="BlueBird\Promise.js" />
+    <Compile Include="Coding.js" />
+    <Compile Include="Example\GameTemplateUpdate.js" />
+    <Compile Include="Excel\Excel.js" />
+    <Compile Include="Exports.js" />
+    <Compile Include="GameTemplate\GameTemplate.js" />
+    <Compile Include="JSON.js" />
+    <Compile Include="MySQL\Cluster.js" />
+    <Compile Include="MySQL\Query.js" />
+    <Compile Include="MySQL\Time.js" />
+    <Compile Include="Non-GuaranteedOrder.js" />
+    <Compile Include="BlockCode.js" />
+    <Compile Include="Express\AddUser.js" />
+    <Compile Include="Express\CookiesManagement.js" />
+    <Compile Include="Express\DeleteUser.js" />
+    <Compile Include="Express\FileUpload.js" />
+    <Compile Include="Express\GETMethod.js" />
+    <Compile Include="Express\HelloExpress.js" />
+    <Compile Include="Express\ListUsers.js" />
+    <Compile Include="Express\POSTMethod.js" />
+    <Compile Include="Express\ServingStaticFiles.js" />
+    <Compile Include="Express\ShowDetail.js" />
+    <Compile Include="Network\TCPClient.js" />
+    <Compile Include="Console.js" />
+    <Compile Include="DNS.js" />
+    <Compile Include="Domain.js" />
+    <Compile Include="GlobalObject.js" />
+    <Compile Include="HelloWorld.js" />
+    <Compile Include="OS.js" />
+    <Compile Include="Path.js" />
+    <Compile Include="Player.js" />
+    <Compile Include="Process.js" />
+    <Compile Include="Network\TCPServer.js" />
+    <Compile Include="Express\Routing.js" />
+    <Compile Include="Redis\Redis.js" />
+    <Compile Include="ScalingApplication\Child.js" />
+    <Compile Include="ScalingApplication\ExecMethod.js" />
+    <Compile Include="ScalingApplication\ForkMethod.js" />
+    <Compile Include="ScalingApplication\SpawnMethod.js" />
+    <Compile Include="ScalingApplication\Support.js" />
+    <Compile Include="Example\Login.js" />
+    <Compile Include="Timer.js" />
+    <Compile Include="Network\WebClient.js" />
+    <Compile Include="Network\WebServer.js" />
+    <Compile Include="Async.js" />
+    <Compile Include="Util.js" />
+    <Compile Include="UUID.js" />
+    <Content Include="data.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Express\" />
+    <Folder Include="Network\" />
+    <Folder Include="MySQL\" />
+    <Folder Include="Excel\" />
+    <Folder Include="BlueBird\" />
+    <Folder Include="Example\" />
+    <Folder Include="GameTemplate\" />
+    <Folder Include="Redis\" />
+    <Folder Include="ScalingApplication\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

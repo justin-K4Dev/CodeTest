@@ -1,0 +1,18 @@
+﻿{
+  "REGION_LIST": {
+
+    "kr": {
+      "regionId": 1,
+      "serverList": {
+        "heimdal": {
+          "serverId": 1,
+          "name": "헤임달",
+          "port": 2013,
+          "limitUsers": 100000,
+          "mysql": { },
+          "redis": { }
+        }
+      }
+    }
+  }
+}
