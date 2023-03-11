@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JSON-.NET": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

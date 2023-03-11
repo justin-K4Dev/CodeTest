@@ -1,0 +1,62 @@
+﻿{
+  "name": "boss",
+  "desc": "전설의 보스",
+  "targets": [
+    {
+      "name": "최고의 악당",
+      "type": "Tutorial.Player",
+      "members": {
+        "Id": "u4us72",
+        "Phones": [
+          {
+            "number": 100,
+            "type": 1
+          }
+        ],
+        "Items": {
+          "1000011101": {
+            "Id": 1000011101,
+            "ItemTid": 111111
+          }
+        },
+        "Watch": {
+          "Device": "iWatch"
+        },
+        "Bags": [
+          {
+            "Wallets": [
+              {
+                "Items": [
+                  {
+                    "Id": 30000,
+                    "ItemTid": 55555
+                  },
+                  {
+                    "Id": 40000,
+                    "ItemTid": 85555
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Wallets": [
+              {
+                "Items": [
+                  {
+                    "Id": 900000,
+                    "ItemTid": 60000
+                  },
+                  {
+                    "Id": 1334455,
+                    "ItemTid": 77777
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
