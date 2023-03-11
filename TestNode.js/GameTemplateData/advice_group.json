@@ -1,0 +1,25 @@
+[ { "category" : 93, "class" : 1, "description" : "[대분류] 전투", "id" : 930000010, "kind" : 0, "text01_id" : 720010000, "type" : 0 }
+, { "category" : 93, "class" : 2, "description" : "[대분류] 랭킹전", "id" : 930000020, "kind" : 0, "text01_id" : 720020000, "type" : 0 }
+, { "category" : 93, "class" : 3, "description" : "[대분류] 영웅", "id" : 930000030, "kind" : 0, "text01_id" : 720030000, "type" : 0 }
+, { "category" : 93, "class" : 4, "description" : "[대분류] 장비", "id" : 930000040, "kind" : 0, "text01_id" : 720040000, "type" : 0 }
+, { "category" : 93, "class" : 5, "description" : "[대분류] 전차", "id" : 930000050, "kind" : 0, "text01_id" : 720050000, "type" : 0 }
+, { "category" : 93, "class" : 6, "description" : "[대분류] 길드", "id" : 930000060, "kind" : 0, "text01_id" : 720060000, "type" : 0 }
+, { "category" : 93, "class" : 1, "description" : "[전투] 월드맵", "id" : 930000110, "kind" : 0, "text01_id" : 720010100, "type" : 1 }
+, { "category" : 93, "class" : 2, "description" : "[전투] 수호신전", "id" : 930000120, "kind" : 0, "text01_id" : 720010200, "type" : 1 }
+, { "category" : 93, "class" : 3, "description" : "[전투] 챕터보스", "id" : 930000130, "kind" : 0, "text01_id" : 720010300, "type" : 1 }
+, { "category" : 93, "class" : 4, "description" : "[전투] 요일보스", "id" : 930000140, "kind" : 0, "text01_id" : 720010400, "type" : 1 }
+, { "category" : 93, "class" : 1, "description" : "[랭킹전] 아레나", "id" : 930000210, "kind" : 0, "text01_id" : 720020100, "type" : 2 }
+, { "category" : 93, "class" : 2, "description" : "[랭킹전] 명예대전", "id" : 930000220, "kind" : 0, "text01_id" : 720020200, "type" : 2 }
+, { "category" : 93, "class" : 3, "description" : "[랭킹전] 월드보스", "id" : 930000230, "kind" : 0, "text01_id" : 720020300, "type" : 2 }
+, { "category" : 93, "class" : 1, "description" : "[영웅] 영웅 고속성장", "id" : 930000310, "kind" : 0, "text01_id" : 720030100, "type" : 3 }
+, { "category" : 93, "class" : 2, "description" : "[영웅] 영웅 강화", "id" : 930000320, "kind" : 0, "text01_id" : 720030200, "type" : 3 }
+, { "category" : 93, "class" : 3, "description" : "[영웅] 영웅 승급", "id" : 930000330, "kind" : 0, "text01_id" : 720030300, "type" : 3 }
+, { "category" : 93, "class" : 4, "description" : "[영웅] 영웅의 제단", "id" : 930000340, "kind" : 0, "text01_id" : 720030400, "type" : 3 }
+, { "category" : 93, "class" : 5, "description" : "[영웅] 대표파티 설정", "id" : 930000350, "kind" : 0, "text01_id" : 720030500, "type" : 3 }
+, { "category" : 93, "class" : 1, "description" : "[장비] 장비 강화", "id" : 930000410, "kind" : 0, "text01_id" : 720040100, "type" : 4 }
+, { "category" : 93, "class" : 2, "description" : "[장비] 장비 제작", "id" : 930000420, "kind" : 0, "text01_id" : 720040200, "type" : 4 }
+, { "category" : 93, "class" : 1, "description" : "[전차] 전차 강화", "id" : 930000510, "kind" : 0, "text01_id" : 720050100, "type" : 5 }
+, { "category" : 93, "class" : 1, "description" : "[길드] 길드 혜택", "id" : 930000610, "kind" : 0, "text01_id" : 720060100, "type" : 6 }
+, { "category" : 93, "class" : 2, "description" : "[길드] 길드 가입 및 창설", "id" : 930000620, "kind" : 0, "text01_id" : 720060200, "type" : 6 }
+, { "category" : 93, "class" : 3, "description" : "[길드] 길드 레이드", "id" : 930000630, "kind" : 0, "text01_id" : 720060300, "type" : 6 }
+ ]

@@ -1,0 +1,21 @@
+[ { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 01", "emblem_b_name" : "guild_emblem_bg_01_b.png", "emblem_name" : "guild_emblem_bg_01.png", "id" : 500001001, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 02", "emblem_b_name" : "guild_emblem_bg_02_b.png", "emblem_name" : "guild_emblem_bg_02.png", "id" : 500001002, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 03", "emblem_b_name" : "guild_emblem_bg_03_b.png", "emblem_name" : "guild_emblem_bg_03.png", "id" : 500001003, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 04", "emblem_b_name" : "guild_emblem_bg_04_b.png", "emblem_name" : "guild_emblem_bg_04.png", "id" : 500001004, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 05", "emblem_b_name" : "guild_emblem_bg_05_b.png", "emblem_name" : "guild_emblem_bg_05.png", "id" : 500001005, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 06", "emblem_b_name" : "guild_emblem_bg_06_b.png", "emblem_name" : "guild_emblem_bg_06.png", "id" : 500001006, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 07", "emblem_b_name" : "guild_emblem_bg_07_b.png", "emblem_name" : "guild_emblem_bg_07.png", "id" : 500001007, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 08", "emblem_b_name" : "guild_emblem_bg_08_b.png", "emblem_name" : "guild_emblem_bg_08.png", "id" : 500001008, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 09", "emblem_b_name" : "guild_emblem_bg_09_b.png", "emblem_name" : "guild_emblem_bg_09.png", "id" : 500001009, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 배경 10", "emblem_b_name" : "guild_emblem_bg_10_b.png", "emblem_name" : "guild_emblem_bg_10.png", "id" : 500001010, "kind" : 0, "type" : 1 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 01", "emblem_b_name" : "guild_emblem_symbol_01_b.png", "emblem_name" : "guild_emblem_symbol_01.png", "id" : 500002001, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 02", "emblem_b_name" : "guild_emblem_symbol_02_b.png", "emblem_name" : "guild_emblem_symbol_02.png", "id" : 500002002, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 03", "emblem_b_name" : "guild_emblem_symbol_03_b.png", "emblem_name" : "guild_emblem_symbol_03.png", "id" : 500002003, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 04", "emblem_b_name" : "guild_emblem_symbol_04_b.png", "emblem_name" : "guild_emblem_symbol_04.png", "id" : 500002004, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 05", "emblem_b_name" : "guild_emblem_symbol_05_b.png", "emblem_name" : "guild_emblem_symbol_05.png", "id" : 500002005, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 06", "emblem_b_name" : "guild_emblem_symbol_06_b.png", "emblem_name" : "guild_emblem_symbol_06.png", "id" : 500002006, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 07", "emblem_b_name" : "guild_emblem_symbol_07_b.png", "emblem_name" : "guild_emblem_symbol_07.png", "id" : 500002007, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 08", "emblem_b_name" : "guild_emblem_symbol_08_b.png", "emblem_name" : "guild_emblem_symbol_08.png", "id" : 500002008, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 09", "emblem_b_name" : "guild_emblem_symbol_09_b.png", "emblem_name" : "guild_emblem_symbol_09.png", "id" : 500002009, "kind" : 0, "type" : 2 }
+, { "category" : 50, "class" : 0, "desc" : "엠블럼 10", "emblem_b_name" : "guild_emblem_symbol_10_b.png", "emblem_name" : "guild_emblem_symbol_10.png", "id" : 500002010, "kind" : 0, "type" : 2 }
+ ]

@@ -1,0 +1,15 @@
+[ { "" : "StageTypeSingle," }
+, { "" : "StageTypeBigBoss," }
+, { "" : "StageTypeTemple," }
+, { "" : "StageTypeWorldBoss," }
+, { "" : "StageTypeBonus," }
+, { "" : "StageTypeQuest," }
+, { "" : "StageTypeArena," }
+, { "" : "StageTypeMultiCombat," }
+, { "" : "StageTypeDayBoss," }
+, { "" : "StageTypeTutorialPrologue," }
+, { "" : "StageTypeMulti," }
+, { "" : "StageTypeArenaMatch," }
+, { "" : "StageTypeMultiMatch," }
+, { "" : "stageTypeGuildRaid," }
+ ]

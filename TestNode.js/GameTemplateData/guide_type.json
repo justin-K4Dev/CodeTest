@@ -1,0 +1,26 @@
+[ { "category" : 63, "class" : 1, "description" : "[전차] 씬", "id" : 630000001, "kind" : 0, "type" : 100 }
+, { "category" : 63, "class" : 2, "description" : "[전차] 업그레이드 버튼", "id" : 630000002, "kind" : 0, "type" : 101 }
+, { "category" : 63, "class" : 2, "description" : "[스킬] 강화 버튼", "id" : 630000003, "kind" : 0, "type" : 102 }
+, { "category" : 63, "class" : 1, "description" : "[영웅] 씬", "id" : 630000004, "kind" : 0, "type" : 200 }
+, { "category" : 63, "class" : 2, "description" : "[영웅] 성장 버튼", "id" : 630000005, "kind" : 0, "type" : 201 }
+, { "category" : 63, "class" : 2, "description" : "[영웅] 강화 버튼", "id" : 630000006, "kind" : 0, "type" : 202 }
+, { "category" : 63, "class" : 2, "description" : "[영웅] 승급 버튼", "id" : 630000007, "kind" : 0, "type" : 203 }
+, { "category" : 63, "class" : 1, "description" : "[가방] 씬", "id" : 630000008, "kind" : 0, "type" : 300 }
+, { "category" : 63, "class" : 1, "description" : "[상점] 씬", "id" : 630000012, "kind" : 0, "type" : 400 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 뒤로가기 버튼", "id" : 630000018, "kind" : 0, "type" : 501 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 전차 버튼", "id" : 630000019, "kind" : 0, "type" : 502 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 영웅 버튼", "id" : 630000020, "kind" : 0, "type" : 503 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 가방 버튼", "id" : 630000021, "kind" : 0, "type" : 504 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 상점 버튼", "id" : 630000022, "kind" : 0, "type" : 505 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 수호신의 신전 버튼", "id" : 630000023, "kind" : 0, "type" : 506 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 보스 버튼", "id" : 630000024, "kind" : 0, "type" : 507 }
+, { "category" : 63, "class" : 2, "description" : "[월드맵] 아레나 버튼", "id" : 630000025, "kind" : 0, "type" : 508 }
+, { "category" : 63, "class" : 1, "description" : "[수호신의 신전] 씬", "id" : 630000026, "kind" : 0, "type" : 600 }
+, { "category" : 63, "class" : 2, "description" : "[수호신의 신전] 전차 버튼", "id" : 630000027, "kind" : 0, "type" : 601 }
+, { "category" : 63, "class" : 2, "description" : "[수호신의 신전] 영웅 버튼", "id" : 630000028, "kind" : 0, "type" : 602 }
+, { "category" : 63, "class" : 2, "description" : "[수호신의 신전] 가방 버튼", "id" : 630000029, "kind" : 0, "type" : 603 }
+, { "category" : 63, "class" : 2, "description" : "[수호신의 신전] 상점 버튼", "id" : 630000030, "kind" : 0, "type" : 604 }
+, { "category" : 63, "class" : 1, "description" : "[아레나] 씬", "id" : 630000032, "kind" : 0, "type" : 700 }
+, { "category" : 63, "class" : 1, "description" : "[보스] 씬", "id" : 630000036, "kind" : 0, "type" : 900 }
+, { "category" : 63, "class" : 1, "description" : "[월드보스] 씬", "id" : 630000038, "kind" : 0, "type" : 1000 }
+ ]

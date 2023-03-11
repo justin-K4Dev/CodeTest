@@ -1,0 +1,27 @@
+[ { "category" : 59, "class" : 0, "desc" : "튜토리얼 전용 스테이지", "direction" : 0, "id" : 590100000, "kind" : 0, "line" : 0, "lv" : 0, "pos" : 0, "team" : 0, "template_id" : 270101001, "type" : 1 }
+, { "category" : 59, "class" : 6, "desc" : "얼티밋 골렘", "direction" : 0, "id" : 590201001, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 70, "team" : 1, "template_id" : 110106706, "type" : 2 }
+, { "category" : 59, "class" : 3, "desc" : "얼티밋 아처", "direction" : 0, "id" : 590201002, "kind" : 0, "line" : 3, "lv" : 1, "pos" : 110, "team" : 1, "template_id" : 110103706, "type" : 2 }
+, { "category" : 59, "class" : 5, "desc" : "얼티밋 위자드", "direction" : 0, "id" : 590201003, "kind" : 0, "line" : 2, "lv" : 1, "pos" : 150, "team" : 1, "template_id" : 110105706, "type" : 2 }
+, { "category" : 59, "class" : 1, "desc" : "얼티밋 워리어", "direction" : 0, "id" : 590201004, "kind" : 0, "line" : 3, "lv" : 1, "pos" : 190, "team" : 1, "template_id" : 110101706, "type" : 2 }
+, { "category" : 59, "class" : 2, "desc" : "얼티밋 로그", "direction" : 0, "id" : 590201005, "kind" : 0, "line" : 2, "lv" : 1, "pos" : 230, "team" : 1, "template_id" : 110102706, "type" : 2 }
+, { "category" : 59, "class" : 4, "desc" : "얼티밋 디펜더", "direction" : 0, "id" : 590201006, "kind" : 0, "line" : 1, "lv" : 1, "pos" : 270, "team" : 1, "template_id" : 110104706, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 데스나이트", "direction" : 0, "id" : 590202701, "kind" : 0, "line" : 3, "lv" : 1, "pos" : 950, "team" : 2, "template_id" : 110240010, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 가디언", "direction" : 0, "id" : 590202401, "kind" : 0, "line" : 1, "lv" : 1, "pos" : 1110, "team" : 2, "template_id" : 110240007, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 벤쉬", "direction" : 0, "id" : 590202201, "kind" : 0, "line" : 2, "lv" : 1, "pos" : 1150, "team" : 2, "template_id" : 110240005, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 스펙터", "direction" : 0, "id" : 590202101, "kind" : 0, "line" : 3, "lv" : 1, "pos" : 1190, "team" : 2, "template_id" : 110240004, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 스켈레톤", "direction" : 0, "id" : 590202301, "kind" : 0, "line" : 2, "lv" : 1, "pos" : 1230, "team" : 2, "template_id" : 110240006, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 위치", "direction" : 0, "id" : 590202501, "kind" : 0, "line" : 3, "lv" : 1, "pos" : 1270, "team" : 2, "template_id" : 110240008, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 가고일", "direction" : 0, "id" : 590202801, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 1150, "team" : 2, "template_id" : 110240011, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "이블 싸이클롭스", "direction" : 0, "id" : 590202601, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 1310, "team" : 2, "template_id" : 110240009, "type" : 2 }
+, { "category" : 59, "class" : 0, "desc" : "전차", "direction" : 0, "id" : 590300001, "kind" : 0, "line" : 0, "lv" : 1, "pos" : -50, "team" : 0, "template_id" : 120000004, "type" : 3 }
+, { "category" : 59, "class" : 0, "desc" : "보스_트롤", "direction" : 0, "id" : 590400001, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110240001, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "보스_요르문간드", "direction" : 0, "id" : 590400002, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110240002, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "보스_헬", "direction" : 0, "id" : 590400003, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110240003, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "보스_토르", "direction" : 0, "id" : 590400004, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110301105, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "마지막 웨이브", "direction" : 0, "id" : 590400005, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110303110, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "마지막 웨이브", "direction" : 0, "id" : 590400006, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110303109, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "마지막 웨이브", "direction" : 0, "id" : 590400007, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110303105, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "마지막 웨이브", "direction" : 0, "id" : 590400008, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110303116, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "마지막 웨이브", "direction" : 0, "id" : 590400009, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110303107, "type" : 6 }
+, { "category" : 59, "class" : 0, "desc" : "마지막 웨이브", "direction" : 0, "id" : 590400010, "kind" : 0, "line" : 0, "lv" : 1, "pos" : 0, "team" : 0, "template_id" : 110303108, "type" : 6 }
+ ]

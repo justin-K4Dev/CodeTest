@@ -1,0 +1,24 @@
+[ { "category" : 51, "class" : 0, "desc" : "노멀", "id" : 510001001, "kind" : 0, "text1_id" : 55013, "text2_id" : 55014, "tier" : 1, "type" : 0 }
+, { "category" : 51, "class" : 1, "desc" : "플레임", "id" : 510001002, "kind" : 0, "text1_id" : 55011, "text2_id" : 55012, "tier" : 1, "type" : 0 }
+, { "category" : 51, "class" : 2, "desc" : "스노우", "id" : 510001003, "kind" : 0, "text1_id" : 55009, "text2_id" : 55010, "tier" : 3, "type" : 0 }
+, { "category" : 51, "class" : 3, "desc" : "크라운", "id" : 510001004, "kind" : 0, "text1_id" : 55007, "text2_id" : 55008, "tier" : 3, "type" : 0 }
+, { "category" : 51, "class" : 4, "desc" : "포이즌", "id" : 510001005, "kind" : 0, "text1_id" : 55005, "text2_id" : 55006, "tier" : 3, "type" : 0 }
+, { "category" : 51, "class" : 5, "desc" : "비스트", "id" : 510001006, "kind" : 0, "text1_id" : 55015, "text2_id" : 55016, "tier" : 3, "type" : 0 }
+, { "category" : 51, "class" : 6, "desc" : "실버윙", "id" : 510001007, "kind" : 0, "text1_id" : 55003, "text2_id" : 55004, "tier" : 4, "type" : 0 }
+, { "category" : 51, "class" : 7, "desc" : "오크", "id" : 510001008, "kind" : 0, "text1_id" : 55019, "text2_id" : 55020, "tier" : 4, "type" : 0 }
+, { "category" : 51, "class" : 8, "desc" : "드래곤", "id" : 510001009, "kind" : 0, "text1_id" : 55017, "text2_id" : 55018, "tier" : 4, "type" : 0 }
+, { "category" : 51, "class" : 9, "desc" : "얼티밋", "id" : 510001010, "kind" : 0, "text1_id" : 55001, "text2_id" : 55002, "tier" : 5, "type" : 0 }
+, { "category" : 51, "class" : 10, "desc" : "에인하자르", "id" : 510001011, "kind" : 0, "text1_id" : 55021, "text2_id" : 55022, "tier" : 5, "type" : 0 }
+, { "category" : 51, "class" : 0, "desc" : "하급", "id" : 510002001, "kind" : 0, "text1_id" : 55101, "text2_id" : 55102, "tier" : 1, "type" : 1 }
+, { "category" : 51, "class" : 1, "desc" : "중급", "id" : 510002002, "kind" : 0, "text1_id" : 55103, "text2_id" : 55104, "tier" : 2, "type" : 1 }
+, { "category" : 51, "class" : 2, "desc" : "상급", "id" : 510002003, "kind" : 0, "text1_id" : 55105, "text2_id" : 55106, "tier" : 3, "type" : 1 }
+, { "category" : 51, "class" : 3, "desc" : "헤임달", "id" : 510002004, "kind" : 0, "text1_id" : 55109, "text2_id" : 55110, "tier" : 3, "type" : 1 }
+, { "category" : 51, "class" : 4, "desc" : "프레이야", "id" : 510002005, "kind" : 0, "text1_id" : 55107, "text2_id" : 55108, "tier" : 3, "type" : 1 }
+, { "category" : 51, "class" : 5, "desc" : "프레이르", "id" : 510002006, "kind" : 0, "text1_id" : 55111, "text2_id" : 55112, "tier" : 4, "type" : 1 }
+, { "category" : 51, "class" : 6, "desc" : "엘룬", "id" : 510002007, "kind" : 0, "text1_id" : 55113, "text2_id" : 55114, "tier" : 4, "type" : 1 }
+, { "category" : 51, "class" : 7, "desc" : "티르", "id" : 510002008, "kind" : 0, "text1_id" : 55115, "text2_id" : 55116, "tier" : 5, "type" : 1 }
+, { "category" : 51, "class" : 8, "desc" : "토르", "id" : 510002009, "kind" : 0, "text1_id" : 55117, "text2_id" : 55118, "tier" : 5, "type" : 1 }
+, { "category" : 51, "class" : 9, "desc" : "오딘", "id" : 510002011, "kind" : 0, "text1_id" : 55119, "text2_id" : 55120, "tier" : 6, "type" : 1 }
+, { "category" : 51, "class" : 10, "desc" : "프리그", "id" : 510002010, "kind" : 0, "text1_id" : 55121, "text2_id" : 55122, "tier" : 6, "type" : 1 }
+, { "category" : 51, "class" : 11, "desc" : "초월", "id" : 510002012, "kind" : 0, "text1_id" : 55123, "text2_id" : 55124, "tier" : 6, "type" : 1 }
+ ]

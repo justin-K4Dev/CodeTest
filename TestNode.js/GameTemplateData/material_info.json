@@ -1,0 +1,36 @@
+[ { "category" : 89, "class" : 1, "description" : "3성 제작망치", "id" : 890000101, "item_id" : 163100801, "kind" : 0, "type" : 1 }
+, { "category" : 89, "class" : 2, "description" : "4성 제작망치", "id" : 890000102, "item_id" : 163100802, "kind" : 0, "type" : 1 }
+, { "category" : 89, "class" : 3, "description" : "5성 제작망치", "id" : 890000103, "item_id" : 163100803, "kind" : 0, "type" : 1 }
+, { "category" : 89, "class" : 4, "description" : "6성 제작망치", "id" : 890000104, "item_id" : 163100804, "kind" : 0, "type" : 1 }
+, { "category" : 89, "class" : 1, "description" : "워리어 제작재료", "id" : 890000201, "item_id" : 163100901, "kind" : 0, "type" : 2 }
+, { "category" : 89, "class" : 2, "description" : "로그 제작재료", "id" : 890000202, "item_id" : 163100902, "kind" : 0, "type" : 2 }
+, { "category" : 89, "class" : 3, "description" : "아쳐 제작재료", "id" : 890000203, "item_id" : 163100903, "kind" : 0, "type" : 2 }
+, { "category" : 89, "class" : 4, "description" : "디펜더 제작재료", "id" : 890000204, "item_id" : 163100904, "kind" : 0, "type" : 2 }
+, { "category" : 89, "class" : 5, "description" : "위자드 제작재료", "id" : 890000205, "item_id" : 163100905, "kind" : 0, "type" : 2 }
+, { "category" : 89, "class" : 6, "description" : "골렘 제작재료", "id" : 890000206, "item_id" : 163100906, "kind" : 0, "type" : 2 }
+, { "category" : 89, "class" : 7, "description" : "워로드 제작재료", "id" : 890000207, "item_id" : 163100907, "kind" : 0, "type" : 2 }
+, { "category" : 89, "class" : 1, "description" : "하급 달의 정수", "id" : 890000301, "item_id" : 163100101, "kind" : 1, "type" : 3 }
+, { "category" : 89, "class" : 2, "description" : "중급 달의 정수", "id" : 890000302, "item_id" : 163100102, "kind" : 1, "type" : 3 }
+, { "category" : 89, "class" : 3, "description" : "상급 달의 정수", "id" : 890000303, "item_id" : 163100103, "kind" : 1, "type" : 3 }
+, { "category" : 89, "class" : 4, "description" : "최상급 달의 정수", "id" : 890000304, "item_id" : 163100104, "kind" : 1, "type" : 3 }
+, { "category" : 89, "class" : 1, "description" : "하급 불의 정수", "id" : 890000305, "item_id" : 163100201, "kind" : 2, "type" : 3 }
+, { "category" : 89, "class" : 2, "description" : "중급 불의 정수", "id" : 890000306, "item_id" : 163100202, "kind" : 2, "type" : 3 }
+, { "category" : 89, "class" : 3, "description" : "상급 불의 정수", "id" : 890000307, "item_id" : 163100203, "kind" : 2, "type" : 3 }
+, { "category" : 89, "class" : 4, "description" : "최상급 불의 정수", "id" : 890000308, "item_id" : 163100204, "kind" : 2, "type" : 3 }
+, { "category" : 89, "class" : 1, "description" : "하급 물의 정수", "id" : 890000309, "item_id" : 163100301, "kind" : 3, "type" : 3 }
+, { "category" : 89, "class" : 2, "description" : "중급 물의 정수", "id" : 890000310, "item_id" : 163100302, "kind" : 3, "type" : 3 }
+, { "category" : 89, "class" : 3, "description" : "상급 물의 정수", "id" : 890000311, "item_id" : 163100303, "kind" : 3, "type" : 3 }
+, { "category" : 89, "class" : 4, "description" : "최상급 물의 정수", "id" : 890000312, "item_id" : 163100304, "kind" : 3, "type" : 3 }
+, { "category" : 89, "class" : 1, "description" : "하급 나무의 정수", "id" : 890000313, "item_id" : 163100401, "kind" : 4, "type" : 3 }
+, { "category" : 89, "class" : 2, "description" : "중급 나무의 정수", "id" : 890000314, "item_id" : 163100402, "kind" : 4, "type" : 3 }
+, { "category" : 89, "class" : 3, "description" : "상급 나무의 정수", "id" : 890000315, "item_id" : 163100403, "kind" : 4, "type" : 3 }
+, { "category" : 89, "class" : 4, "description" : "최상급 나무의 정수", "id" : 890000316, "item_id" : 163100404, "kind" : 4, "type" : 3 }
+, { "category" : 89, "class" : 1, "description" : "하급 황금의 정수", "id" : 890000317, "item_id" : 163100501, "kind" : 5, "type" : 3 }
+, { "category" : 89, "class" : 2, "description" : "중급 황금의 정수", "id" : 890000318, "item_id" : 163100502, "kind" : 5, "type" : 3 }
+, { "category" : 89, "class" : 3, "description" : "상급 황금의 정수", "id" : 890000319, "item_id" : 163100503, "kind" : 5, "type" : 3 }
+, { "category" : 89, "class" : 4, "description" : "최상급 황금의 정수", "id" : 890000320, "item_id" : 163100504, "kind" : 5, "type" : 3 }
+, { "category" : 89, "class" : 1, "description" : "하급 대지의 정수", "id" : 890000321, "item_id" : 163100601, "kind" : 6, "type" : 3 }
+, { "category" : 89, "class" : 2, "description" : "중급 대지의 정수", "id" : 890000322, "item_id" : 163100602, "kind" : 6, "type" : 3 }
+, { "category" : 89, "class" : 3, "description" : "상급 대지의 정수", "id" : 890000323, "item_id" : 163100603, "kind" : 6, "type" : 3 }
+, { "category" : 89, "class" : 4, "description" : "최상급 대지의 정수", "id" : 890000324, "item_id" : 163100604, "kind" : 6, "type" : 3 }
+ ]

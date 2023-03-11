@@ -1,0 +1,46 @@
+[ { "category" : 41, "class" : 1, "description" : "1위", "id" : 410010101, "kind" : 1, "range" : 1, "reward_mail_id" : 400011000, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "2위", "id" : 410010102, "kind" : 1, "range" : 2, "reward_mail_id" : 400011001, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "3위", "id" : 410010103, "kind" : 1, "range" : 3, "reward_mail_id" : 400011002, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "4~10위", "id" : 410010104, "kind" : 1, "range" : 10, "reward_mail_id" : 400011003, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "11~100위", "id" : 410010105, "kind" : 1, "range" : 100, "reward_mail_id" : 400011004, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "101~300위", "id" : 410010106, "kind" : 1, "range" : 300, "reward_mail_id" : 400011005, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "301~500위", "id" : 410010107, "kind" : 1, "range" : 500, "reward_mail_id" : 400011006, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "501~1000위", "id" : 410010108, "kind" : 1, "range" : 1000, "reward_mail_id" : 400011007, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "0~10%", "id" : 410010201, "kind" : 3, "range" : 10, "reward_mail_id" : 400011008, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "11~20%", "id" : 410010202, "kind" : 3, "range" : 20, "reward_mail_id" : 400011009, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "21~30%", "id" : 410010203, "kind" : 3, "range" : 30, "reward_mail_id" : 400011010, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "31~40%", "id" : 410010204, "kind" : 3, "range" : 40, "reward_mail_id" : 400011011, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "41~50%", "id" : 410010205, "kind" : 3, "range" : 50, "reward_mail_id" : 400011012, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "51~60%", "id" : 410010206, "kind" : 3, "range" : 60, "reward_mail_id" : 400011013, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "61~70%", "id" : 410010207, "kind" : 3, "range" : 70, "reward_mail_id" : 400011014, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "71~80%", "id" : 410010208, "kind" : 3, "range" : 80, "reward_mail_id" : 400011015, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "81~90%", "id" : 410010209, "kind" : 3, "range" : 90, "reward_mail_id" : 400011016, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "91~100%", "id" : 410010210, "kind" : 3, "range" : 100, "reward_mail_id" : 400011017, "type" : 1 }
+, { "category" : 41, "class" : 2, "description" : "참여 횟수 30회 이상", "id" : 410010301, "kind" : 0, "range" : 30, "reward_mail_id" : 400011018, "type" : 1 }
+, { "category" : 41, "class" : 2, "description" : "참여 횟수 10 ~ 29회", "id" : 410010302, "kind" : 0, "range" : 10, "reward_mail_id" : 400011019, "type" : 1 }
+, { "category" : 41, "class" : 2, "description" : "참여 횟수 1 ~ 9회", "id" : 410010303, "kind" : 0, "range" : 1, "reward_mail_id" : 400011020, "type" : 1 }
+, { "category" : 41, "class" : 3, "description" : "연승 횟수 30회 이상", "id" : 410010304, "kind" : 0, "range" : 30, "reward_mail_id" : 400011021, "type" : 1 }
+, { "category" : 41, "class" : 3, "description" : "연승 횟수 10 ~ 29회", "id" : 410010305, "kind" : 0, "range" : 10, "reward_mail_id" : 400011022, "type" : 1 }
+, { "category" : 41, "class" : 3, "description" : "연승 횟수 1~9회", "id" : 410010306, "kind" : 0, "range" : 1, "reward_mail_id" : 400011023, "type" : 1 }
+, { "category" : 41, "class" : 1, "description" : "1위", "id" : 410020101, "kind" : 1, "range" : 1, "reward_mail_id" : 400010901, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "2위", "id" : 410020102, "kind" : 1, "range" : 2, "reward_mail_id" : 400010902, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "3위", "id" : 410020103, "kind" : 1, "range" : 3, "reward_mail_id" : 400010903, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "4~10위", "id" : 410020104, "kind" : 1, "range" : 10, "reward_mail_id" : 400010904, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "11~100위", "id" : 410020105, "kind" : 1, "range" : 100, "reward_mail_id" : 400010905, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "101~300위", "id" : 410020106, "kind" : 1, "range" : 300, "reward_mail_id" : 400010906, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "301~500위", "id" : 410020107, "kind" : 1, "range" : 500, "reward_mail_id" : 400010907, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "501~1000위", "id" : 410020108, "kind" : 1, "range" : 1000, "reward_mail_id" : 400010908, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "0~10%", "id" : 410020201, "kind" : 3, "range" : 10, "reward_mail_id" : 400010909, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "11~20%", "id" : 410020202, "kind" : 3, "range" : 20, "reward_mail_id" : 400010910, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "21~30%", "id" : 410020203, "kind" : 3, "range" : 30, "reward_mail_id" : 400010911, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "31~40%", "id" : 410020204, "kind" : 3, "range" : 40, "reward_mail_id" : 400010912, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "41~50%", "id" : 410020205, "kind" : 3, "range" : 50, "reward_mail_id" : 400010913, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "51~60%", "id" : 410020206, "kind" : 3, "range" : 60, "reward_mail_id" : 400010914, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "61~70%", "id" : 410020207, "kind" : 3, "range" : 70, "reward_mail_id" : 400010915, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "71~80%", "id" : 410020208, "kind" : 3, "range" : 80, "reward_mail_id" : 400010916, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "81~90%", "id" : 410020209, "kind" : 3, "range" : 90, "reward_mail_id" : 400010917, "type" : 2 }
+, { "category" : 41, "class" : 1, "description" : "91~100%", "id" : 410020210, "kind" : 3, "range" : 100, "reward_mail_id" : 400010918, "type" : 2 }
+, { "category" : 41, "class" : 2, "description" : "참여 횟수 30회", "id" : 410020301, "kind" : 0, "range" : 30, "reward_mail_id" : 400010919, "type" : 2 }
+, { "category" : 41, "class" : 2, "description" : "참여 횟수 10 ~ 29회", "id" : 410020303, "kind" : 0, "range" : 10, "reward_mail_id" : 400010920, "type" : 2 }
+, { "category" : 41, "class" : 2, "description" : "참여 횟수 1 ~ 9회", "id" : 410020304, "kind" : 0, "range" : 1, "reward_mail_id" : 400010921, "type" : 2 }
+ ]

@@ -1,0 +1,6 @@
+[ { "buff_id" : 0, "category" : 104, "class" : 0, "description" : "영웅 소환 가격 할인 이벤트", "hot_visible" : 0, "icon_name" : "empty", "id" : 1040010001, "kind" : 0, "text01_id" : 0, "text02_id" : 0, "text03_id" : 0, "type" : 1 }
+, { "buff_id" : 0, "category" : 104, "class" : 0, "description" : "다이아 충전 보너스 지급 이벤트", "hot_visible" : 0, "icon_name" : "empty", "id" : 1040010002, "kind" : 0, "text01_id" : 0, "text02_id" : 0, "text03_id" : 0, "type" : 2 }
+, { "buff_id" : 230117101, "category" : 104, "class" : 0, "description" : "월드맵 식량 무제한 이벤트", "hot_visible" : 1, "icon_name" : "icon_event_03_01.png", "id" : 1040010003, "kind" : 0, "text01_id" : 0, "text02_id" : 0, "text03_id" : 0, "type" : 3 }
+, { "buff_id" : 230117007, "category" : 104, "class" : 0, "description" : "영웅 경험치 보너스 이벤트", "hot_visible" : 1, "icon_name" : "icon_event_04_01.png", "id" : 1040010004, "kind" : 0, "text01_id" : 0, "text02_id" : 0, "text03_id" : 0, "type" : 4 }
+, { "buff_id" : 230117008, "category" : 104, "class" : 0, "description" : "골드 보너스 이벤트", "hot_visible" : 1, "icon_name" : "icon_event_05_01.png", "id" : 1040010005, "kind" : 0, "text01_id" : 0, "text02_id" : 0, "text03_id" : 0, "type" : 5 }
+ ]

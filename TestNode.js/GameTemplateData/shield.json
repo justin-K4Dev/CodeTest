@@ -1,0 +1,5 @@
+[ { "category" : 15, "class" : 0, "id" : 150100001, "kind" : 0, "name" : "1일 보호막", "text1_id" : 7801, "text2_id" : 7802, "time" : 1, "type" : 1, "wating_time" : 5 }
+, { "category" : 15, "class" : 0, "id" : 150100002, "kind" : 0, "name" : "2일 보호막", "text1_id" : 7803, "text2_id" : 7804, "time" : 2, "type" : 1, "wating_time" : 10 }
+, { "category" : 15, "class" : 0, "id" : 150100003, "kind" : 0, "name" : "1주일 보호막", "text1_id" : 7805, "text2_id" : 7806, "time" : 7, "type" : 1, "wating_time" : 35 }
+, { "category" : 15, "class" : 0, "id" : 150100004, "kind" : 0, "name" : "침략 보호막", "text1_id" : "empty", "text2_id" : "empty", "time" : 16, "type" : 2, "wating_time" : 80 }
+ ]

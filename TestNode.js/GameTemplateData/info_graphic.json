@@ -1,0 +1,14 @@
+[ { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_01.png", "graphic_time" : 5, "id" : 880000001, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_02.png", "graphic_time" : 5, "id" : 880000002, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_03.png", "graphic_time" : 5, "id" : 880000003, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_04.png", "graphic_time" : 5, "id" : 880000004, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_05.png", "graphic_time" : 5, "id" : 880000005, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_06.png", "graphic_time" : 5, "id" : 880000006, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_07.png", "graphic_time" : 5, "id" : 880000007, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_08.png", "graphic_time" : 5, "id" : 880000008, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_09.png", "graphic_time" : 5, "id" : 880000009, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_10.png", "graphic_time" : 5, "id" : 880000010, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_11.png", "graphic_time" : 5, "id" : 880000011, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_12.png", "graphic_time" : 5, "id" : 880000012, "kind" : 0, "type" : 0 }
+, { "category" : 88, "class" : 0, "description" : "[모든유저] 로딩화면", "graphic_filename" : "ec_loading_13.png", "graphic_time" : 5, "id" : 880000013, "kind" : 0, "type" : 0 }
+ ]

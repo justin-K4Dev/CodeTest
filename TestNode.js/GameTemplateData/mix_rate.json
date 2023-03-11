@@ -1,0 +1,5 @@
+[ { "category" : 35, "class" : 0, "group1" : 0, "group10" : 0, "group2" : 5000, "group3" : 0, "group4" : 0, "group5" : 0, "group6" : 0, "group7" : 0, "group8" : 0, "group9" : 0, "id" : 350000001, "kind" : 0, "type" : 0 }
+, { "category" : 35, "class" : 0, "group1" : 0, "group10" : 0, "group2" : 0, "group3" : 5000, "group4" : 0, "group5" : 0, "group6" : 0, "group7" : 0, "group8" : 0, "group9" : 0, "id" : 350000002, "kind" : 0, "type" : 0 }
+, { "category" : 35, "class" : 0, "group1" : 0, "group10" : 0, "group2" : 0, "group3" : 0, "group4" : 5000, "group5" : 0, "group6" : 0, "group7" : 0, "group8" : 0, "group9" : 0, "id" : 350000003, "kind" : 0, "type" : 0 }
+, { "category" : 35, "class" : 0, "group1" : 0, "group10" : 0, "group2" : 0, "group3" : 0, "group4" : 0, "group5" : 5000, "group6" : 0, "group7" : 0, "group8" : 0, "group9" : 0, "id" : 350000004, "kind" : 0, "type" : 0 }
+ ]

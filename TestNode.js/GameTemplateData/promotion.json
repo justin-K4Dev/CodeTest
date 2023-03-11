@@ -1,0 +1,6 @@
+[ { "category" : 57, "id" : 570000001, "promotion_require_chr_count" : 1, "promotion_require_chr_tier" : 1, "promotion_require_resource_count" : 1000, "promotion_require_resource_type" : 1, "type" : 1 }
+, { "category" : 57, "id" : 570000002, "promotion_require_chr_count" : 2, "promotion_require_chr_tier" : 2, "promotion_require_resource_count" : 6000, "promotion_require_resource_type" : 1, "type" : 2 }
+, { "category" : 57, "id" : 570000003, "promotion_require_chr_count" : 3, "promotion_require_chr_tier" : 3, "promotion_require_resource_count" : 12000, "promotion_require_resource_type" : 1, "type" : 3 }
+, { "category" : 57, "id" : 570000004, "promotion_require_chr_count" : 4, "promotion_require_chr_tier" : 4, "promotion_require_resource_count" : 30000, "promotion_require_resource_type" : 1, "type" : 4 }
+, { "category" : 57, "id" : 570000005, "promotion_require_chr_count" : 5, "promotion_require_chr_tier" : 5, "promotion_require_resource_count" : 60000, "promotion_require_resource_type" : 1, "type" : 5 }
+ ]

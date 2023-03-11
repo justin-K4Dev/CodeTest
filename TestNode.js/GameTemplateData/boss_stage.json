@@ -1,0 +1,13 @@
+[ { "category" : 28, "class" : 101, "id" : 280000101, "reward_mail_id1" : 400010401, "reward_mail_id2" : 400010402, "reward_mail_id3" : 400010403, "stage_id" : 270000101, "time" : 2, "type" : 2 }
+, { "category" : 28, "class" : 102, "id" : 280000102, "reward_mail_id1" : 400010404, "reward_mail_id2" : 400010405, "reward_mail_id3" : 400010406, "stage_id" : 270000102, "time" : 4, "type" : 2 }
+, { "category" : 28, "class" : 0, "id" : 280010001, "reward_mail_id1" : 400010404, "reward_mail_id2" : 400010405, "reward_mail_id3" : 400010406, "stage_id" : 270040001, "time" : 4, "type" : 1 }
+, { "category" : 28, "class" : 1, "id" : 280020001, "reward_mail_id1" : 400010401, "reward_mail_id2" : 400010402, "reward_mail_id3" : 400010403, "stage_id" : 270020001, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 2, "id" : 280020002, "reward_mail_id1" : 400010404, "reward_mail_id2" : 400010405, "reward_mail_id3" : 400010406, "stage_id" : 270020002, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 3, "id" : 280020003, "reward_mail_id1" : 400010407, "reward_mail_id2" : 400010408, "reward_mail_id3" : 400010409, "stage_id" : 270020003, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 4, "id" : 280020004, "reward_mail_id1" : 400010410, "reward_mail_id2" : 400010411, "reward_mail_id3" : 400010412, "stage_id" : 270020004, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 5, "id" : 280020005, "reward_mail_id1" : 400010413, "reward_mail_id2" : 400010414, "reward_mail_id3" : 400010415, "stage_id" : 270020005, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 6, "id" : 280020006, "reward_mail_id1" : 400010416, "reward_mail_id2" : 400010417, "reward_mail_id3" : 400010418, "stage_id" : 270020006, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 7, "id" : 280020007, "reward_mail_id1" : 400010419, "reward_mail_id2" : 400010420, "reward_mail_id3" : 400010421, "stage_id" : 270020007, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 8, "id" : 280020008, "reward_mail_id1" : 400010422, "reward_mail_id2" : 400010423, "reward_mail_id3" : 400010424, "stage_id" : 270020008, "time" : 1, "type" : 2 }
+, { "category" : 28, "class" : 9, "id" : 280020009, "reward_mail_id1" : 400010425, "reward_mail_id2" : 400010426, "reward_mail_id3" : 400010427, "stage_id" : 270020009, "time" : 1, "type" : 2 }
+ ]

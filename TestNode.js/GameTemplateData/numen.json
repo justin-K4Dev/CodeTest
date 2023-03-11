@@ -1,0 +1,7 @@
+[ { "category" : 30, "character_id" : 110305101, "class" : 0, "cooltime" : 15, "description" : "헤임달", "id" : 300100101, "kind" : 0, "type" : 1, "use_item_count" : 20, "use_item_id" : 160801077 }
+, { "category" : 30, "character_id" : 110305001, "class" : 0, "cooltime" : 15, "description" : "프레이야", "id" : 300100102, "kind" : 0, "type" : 2, "use_item_count" : 50, "use_item_id" : 160801077 }
+, { "category" : 30, "character_id" : 110305201, "class" : 0, "cooltime" : 15, "description" : "프레이르", "id" : 300100103, "kind" : 0, "type" : 3, "use_item_count" : 100, "use_item_id" : 160801077 }
+, { "category" : 30, "character_id" : 110305401, "class" : 0, "cooltime" : 15, "description" : "엘룬", "id" : 300100104, "kind" : 0, "type" : 4, "use_item_count" : 150, "use_item_id" : 160801077 }
+, { "category" : 30, "character_id" : 110305501, "class" : 0, "cooltime" : 15, "description" : "티르", "id" : 300100105, "kind" : 0, "type" : 5, "use_item_count" : 200, "use_item_id" : 160801077 }
+, { "category" : 30, "character_id" : 110305601, "class" : 0, "cooltime" : 15, "description" : "토르", "id" : 300100106, "kind" : 0, "type" : 6, "use_item_count" : 300, "use_item_id" : 160801077 }
+ ]

@@ -1,0 +1,125 @@
+[ { "category" : 60, "class" : 0, "desc" : "아군 영웅 대기", "id" : 600000001, "kind" : 0, "type" : 601, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "아군 영웅 무적", "id" : 600000002, "kind" : 0, "type" : 1200, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "언데드 대기", "id" : 600000003, "kind" : 0, "type" : 701, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "언데드 무적", "id" : 600000004, "kind" : 0, "type" : 1300, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 페이드인", "id" : 600000005, "kind" : 0, "type" : 103, "value_01" : 2, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 이동", "id" : 600000006, "kind" : 0, "type" : 100, "value_01" : 8, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000007, "kind" : 0, "type" : 105, "value_01" : 2, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "타이틀 출력", "id" : 600000008, "kind" : 0, "type" : 2100, "value_01" : 1105, "value_02" : 1106, "value_03" : 4, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "워로드 스폰", "id" : 600000009, "kind" : 0, "type" : 200, "value_01" : 110107706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "워로드 무적", "id" : 600000010, "kind" : 0, "type" : 203, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "워로드 이동", "id" : 600000011, "kind" : 0, "type" : 201, "value_01" : 450, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "워로드 애니 출력", "id" : 600000012, "kind" : 0, "type" : 202, "value_01" : 210107006, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000013, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "대사 사운드 출력(01)", "id" : 600000014, "kind" : 0, "type" : 2300, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "t_01.wav" }
+, { "category" : 60, "class" : 1, "desc" : "대사 출력", "id" : 600000015, "kind" : 0, "type" : 800, "value_01" : 610101001, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 골렘 애니", "id" : 600000016, "kind" : 0, "type" : 2200, "value_01" : 110106706, "value_02" : 210106008, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 아처 애니", "id" : 600000017, "kind" : 0, "type" : 2200, "value_01" : 110103706, "value_02" : 210103010, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 위자드 애니", "id" : 600000018, "kind" : 0, "type" : 2200, "value_01" : 110105706, "value_02" : 210105010, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 디펜더 애니", "id" : 600000019, "kind" : 0, "type" : 2200, "value_01" : 110104706, "value_02" : 210104010, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 로그 애니", "id" : 600000020, "kind" : 0, "type" : 2200, "value_01" : 110102706, "value_02" : 210102008, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 워리어 애니", "id" : 600000021, "kind" : 0, "type" : 2200, "value_01" : 110101706, "value_02" : 210101008, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "워로드 애니 출력", "id" : 600000022, "kind" : 0, "type" : 202, "value_01" : 210107006, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 스켈레톤 사망", "id" : 600000023, "kind" : 0, "type" : 1700, "value_01" : 110240006, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000024, "kind" : 0, "type" : 105, "value_01" : 1.6, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "워로드 전투 참여", "id" : 600000025, "kind" : 0, "type" : 205, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "언데드 전투 참여", "id" : 600000026, "kind" : 0, "type" : 702, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "아군 영웅 전투 참여", "id" : 600000027, "kind" : 0, "type" : 602, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "카메라 락해제", "id" : 600000028, "kind" : 0, "type" : 106, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000029, "kind" : 0, "type" : 105, "value_01" : 3.5, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "워로드 넉백", "id" : 600000030, "kind" : 0, "type" : 1900, "value_01" : 110107706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 골렘 넉백", "id" : 600000031, "kind" : 0, "type" : 1900, "value_01" : 110106706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 로그 사망", "id" : 600000032, "kind" : 0, "type" : 1700, "value_01" : 110102706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 아처 넉백", "id" : 600000033, "kind" : 0, "type" : 1900, "value_01" : 110103706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 워리어 사망", "id" : 600000034, "kind" : 0, "type" : 1700, "value_01" : 110101706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 위자드 사망", "id" : 600000035, "kind" : 0, "type" : 1700, "value_01" : 110105706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 디펜더 넉백", "id" : 600000036, "kind" : 0, "type" : 1900, "value_01" : 110104706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000037, "kind" : 0, "type" : 105, "value_01" : 0.3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "영웅 생산 UI 출력", "id" : 600000038, "kind" : 0, "type" : 900, "value_01" : 1100, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "영웅 생산 UI 삭제", "id" : 600000039, "kind" : 0, "type" : 901, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 데스나이트 공격", "id" : 600000040, "kind" : 0, "type" : 2200, "value_01" : 110240010, "value_02" : 210207013, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000041, "kind" : 0, "type" : 105, "value_01" : 0.7, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 디펜더 넉백", "id" : 600000042, "kind" : 0, "type" : 1900, "value_01" : 110104706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "워로드 넉백", "id" : 600000043, "kind" : 0, "type" : 1900, "value_01" : 110107706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000044, "kind" : 0, "type" : 105, "value_01" : 0.3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 골렘 넉백", "id" : 600000045, "kind" : 0, "type" : 1900, "value_01" : 110106706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 워리어 넉백", "id" : 600000046, "kind" : 0, "type" : 1900, "value_01" : 110101706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000047, "kind" : 0, "type" : 105, "value_01" : 0.3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 아처 넉백", "id" : 600000048, "kind" : 0, "type" : 1900, "value_01" : 110103706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 로그 사망", "id" : 600000049, "kind" : 0, "type" : 1700, "value_01" : 110102706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 디펜더 넉백", "id" : 600000050, "kind" : 0, "type" : 1900, "value_01" : 110104706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000051, "kind" : 0, "type" : 105, "value_01" : 0.3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 위자드 사망", "id" : 600000052, "kind" : 0, "type" : 1700, "value_01" : 110105706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 스펙터 사망", "id" : 600000053, "kind" : 0, "type" : 1700, "value_01" : 110240004, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 디펜더 넉백", "id" : 600000054, "kind" : 0, "type" : 1900, "value_01" : 110104706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000055, "kind" : 0, "type" : 105, "value_01" : 0.3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 골렘 넉백", "id" : 600000056, "kind" : 0, "type" : 1900, "value_01" : 110106706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 위치 사망", "id" : 600000057, "kind" : 0, "type" : 1700, "value_01" : 110240008, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 워리어 사망", "id" : 600000058, "kind" : 0, "type" : 1700, "value_01" : 110101706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "대사 사운드 출력(02)", "id" : 600000059, "kind" : 0, "type" : 2300, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "t_02.wav" }
+, { "category" : 60, "class" : 1, "desc" : "대사 출력", "id" : 600000060, "kind" : 0, "type" : 800, "value_01" : 610101002, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "카메라 락", "id" : 600000061, "kind" : 0, "type" : 108, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "카메라 왼쪽 이동", "id" : 600000062, "kind" : 0, "type" : 107, "value_01" : 2, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "전차 스폰", "id" : 600000063, "kind" : 0, "type" : 300, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "전차 무적", "id" : 600000064, "kind" : 0, "type" : 302, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "전차 이동", "id" : 600000065, "kind" : 0, "type" : 301, "value_01" : 110, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "전차 UI 출력", "id" : 600000066, "kind" : 0, "type" : 1000, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000067, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 가고일 사망", "id" : 600000068, "kind" : 0, "type" : 1700, "value_01" : 110240011, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 벤쉬 사망", "id" : 600000069, "kind" : 0, "type" : 1700, "value_01" : 110240005, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000070, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 데스나이트 사망", "id" : 600000071, "kind" : 0, "type" : 1700, "value_01" : 110240010, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000072, "kind" : 0, "type" : 105, "value_01" : 0.5, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 싸이클롭스 사망", "id" : 600000073, "kind" : 0, "type" : 1700, "value_01" : 110240009, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000074, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "이블 가디언 사망", "id" : 600000075, "kind" : 0, "type" : 1700, "value_01" : 110240007, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "아군 영웅 대기", "id" : 600000076, "kind" : 0, "type" : 601, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000077, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 골렘 승리 애니 ", "id" : 600000078, "kind" : 0, "type" : 2200, "value_01" : 110106706, "value_02" : 210106006, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 아처 승리 애니 ", "id" : 600000079, "kind" : 0, "type" : 2200, "value_01" : 110103706, "value_02" : 210103006, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 디펜더 승리 애니 ", "id" : 600000080, "kind" : 0, "type" : 2200, "value_01" : 110104706, "value_02" : 210104006, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 워로드 승리 애니 ", "id" : 600000081, "kind" : 0, "type" : 202, "value_01" : 210107005, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "전차 UI 삭제", "id" : 600000082, "kind" : 0, "type" : 1001, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000083, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "보스 스폰_헬", "id" : 600000084, "kind" : 0, "type" : 400, "value_01" : 110240003, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "헬_전역 스킬 사용", "id" : 600000085, "kind" : 0, "type" : 2000, "value_01" : 110240003, "value_02" : 2, "value_03" : 500, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000086, "kind" : 0, "type" : 105, "value_01" : 1.03, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000087, "kind" : 0, "type" : 1800, "value_01" : 0.2, "value_02" : 0.1, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 아처 사망", "id" : 600000088, "kind" : 0, "type" : 1700, "value_01" : 110103706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 디펜더 사망", "id" : 600000089, "kind" : 0, "type" : 1700, "value_01" : 110104706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 골렘 사망", "id" : 600000090, "kind" : 0, "type" : 1700, "value_01" : 110106706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "얼티밋 워로드 사망", "id" : 600000091, "kind" : 0, "type" : 1700, "value_01" : 110107706, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000092, "kind" : 0, "type" : 105, "value_01" : 0.4, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000093, "kind" : 0, "type" : 1800, "value_01" : 1, "value_02" : 0.2, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000094, "kind" : 0, "type" : 105, "value_01" : 4, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "대사 사운드 출력(03)", "id" : 600000095, "kind" : 0, "type" : 2300, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "t_03.wav" }
+, { "category" : 60, "class" : 1, "desc" : "대사 출력", "id" : 600000096, "kind" : 0, "type" : 800, "value_01" : 610101003, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "수호신 UI 출력", "id" : 600000097, "kind" : 0, "type" : 1100, "value_01" : 300100106, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000098, "kind" : 0, "type" : 105, "value_01" : 0.1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "헬 사망", "id" : 600000099, "kind" : 0, "type" : 1700, "value_01" : 110240003, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "수호신 UI 삭제", "id" : 600000100, "kind" : 0, "type" : 1101, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000101, "kind" : 0, "type" : 1800, "value_01" : 0.2, "value_02" : 0.1, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000102, "kind" : 0, "type" : 105, "value_01" : 0.35, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000103, "kind" : 0, "type" : 1800, "value_01" : 1, "value_02" : 0.2, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "몬스터 웨이브", "id" : 600000104, "kind" : 0, "type" : 700, "value_01" : 777777, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000105, "kind" : 0, "type" : 105, "value_01" : 5, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "보스 스폰_요르문간드", "id" : 600000106, "kind" : 0, "type" : 400, "value_01" : 110240002, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000107, "kind" : 0, "type" : 105, "value_01" : 0.1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000108, "kind" : 0, "type" : 1800, "value_01" : 0.2, "value_02" : 0.1, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000109, "kind" : 0, "type" : 105, "value_01" : 0.3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000110, "kind" : 0, "type" : 1800, "value_01" : 1, "value_02" : 0.2, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000111, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "요르문간드_롤링어택", "id" : 600000112, "kind" : 0, "type" : 2000, "value_01" : 110240002, "value_02" : 5, "value_03" : 200, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000113, "kind" : 0, "type" : 105, "value_01" : 1.6, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000114, "kind" : 0, "type" : 1800, "value_01" : 0.2, "value_02" : 0.1, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "토르 사망", "id" : 600000115, "kind" : 0, "type" : 1700, "value_01" : 110305601, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000116, "kind" : 0, "type" : 105, "value_01" : 0.5, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 속도", "id" : 600000117, "kind" : 0, "type" : 1800, "value_01" : 1, "value_02" : 0.2, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000118, "kind" : 0, "type" : 105, "value_01" : 1, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "대사 사운드 출력(04)", "id" : 600000119, "kind" : 0, "type" : 2300, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "t_04.wav" }
+, { "category" : 60, "class" : 1, "desc" : "대사 출력", "id" : 600000120, "kind" : 0, "type" : 800, "value_01" : 610101004, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "튜토리얼 종료", "id" : 600000121, "kind" : 0, "type" : 1500, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "화면 페이드아웃", "id" : 600000122, "kind" : 0, "type" : 104, "value_01" : 3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 1, "desc" : "시퀀스 딜레이 타임", "id" : 600000123, "kind" : 0, "type" : 105, "value_01" : 3, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+, { "category" : 60, "class" : 0, "desc" : "프롤로그 출력", "id" : 600000124, "kind" : 0, "type" : 1600, "value_01" : 0, "value_02" : 0, "value_03" : 0, "value_string" : "empty" }
+ ]
