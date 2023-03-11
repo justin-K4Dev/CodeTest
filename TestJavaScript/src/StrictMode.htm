@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+
+            // Strict mode
+            // ECMAScript 5 부터 적용
+
+            // strict 모드를 사용하게 되면
+            // 암시적으로 선언한 변수를 사용하거나 읽기 전용 속성에 값을 할당 하거나
+            // 확장할 수 없는 개체에 속성을 추가할 수 없다.
+
+            // strict 모드의 선언법
+            // 1. 전역에서 strict 모드를 사용하고자 한다면 JavaScript 코드의 맨 윗부분에 "use strict"를 쓴다.
+            // Strict mode for scripts
+            // Whole-script strict mode syntax
+            "use strict";
+
+            function a() {
+                var hello = 7;
+                return hello;
+            }
+
+            // 구문 오류 !!!
+            hello = 5;
+            // strict 모드를 전역에 설정하였기 때문에 hello 라는 변수를 함수 밖의 변수로 선언할 수 없다.
+
+            // 2. 함수내에서만 strict 모드를 사용하고자 할 때는 함수 내의 최상위에 "use strict"를 쓴다.
+            // Strict mode for functions
+            function a(){
+                // Function-level strict mode syntax
+                "use strict"
+
+                // 구문 오류 !!!
+                hello = 7;
+                return hello;
+            }
+
+            hello = 5;
+            // strict 모드를 함수내에서만 사용하였기 때문에 함수내에서 선언의 경우 구문오류가 발생한다.
+
+            // strict 모드의 제한
+            // Converting mistakes into errors
+            // "use strict"; 를 사용하였을 때 제한이 되는 경우를 나열해 보자.
+
+            // 1. 선언하지 않고 변수를 사용할 때.
+            "use strict";
+            x = 3.14; // 선언하지 않고 사용하여 오류 !!!
+
+            // 2. 변수,함수,매개변수를 삭제하려할 때.
+            "use strict";
+            x = 3.14;
+            delete x; // 삭제 않됨 !!!
+
+            // 3. 동일한 프로퍼티를 한번 이상 선언하려 할 때.
+            "use strict";
+            var x = { p1 : 10, p1 : 20 }; // 오류 !!!
+
+            function sum(a, a, c){ // !!! syntax error
+                "use strict";
+                return a + b + c; // wrong if this code ran
+            }
+
+            // 4. 매개변수 이름이 동일할 때.
+            "use strict";
+            function x(p1, p1) {}; // 오류 !!!
+
+            // 5. 8진법의 숫자 리터럴 과 특수문자를 할당하려 할 때.
+            "use strict";
+            var x = 010; // 오류 !!!
+            var x = /010; // 오류 !!!
+
+            // 6. 읽기전용에 할당하려 할 때.
+            // Assignment to a non-writable property
+            "use strict";
+            var obj = {};
+            obj.defineProperty(obj, "x", {value:0, writable:false});
+            obj.x = 3.14; // 오류 !!!
+
+            // 7. 얻기 전용 (get-only)  에 할당하려 할 때.
+            // Assignment to a getter-only property
+            "use strict";
+            var obj = {get x() {return 0} };
+            obj.x = 3.14; // 오류 !!!
+
+            // Assignment to a new property on a non-extensible object
+            var fixed = {};
+            Object.preventExtensions(fixed);
+            fixed.newProp = "ohai"; // throws a TypeError
+
+            // 8. 삭제불가능한 프로퍼티를 삭제하려 할 때.
+            "use strict";
+            delete Object.prototype; // 오류 !!!
+
+            // 9. with 키워드를 사용하려 할 때.
+            "use strict";
+            with (Math){ x = cos(2) }; // 오류 !!!
+
+            // 10. eval() 을 사용하려 할 때.
+            "use strict";
+            eval("var x = 2");
+            alert(x); // 오류 !!!
+
+            function strict1(str){
+                "use strict";
+                return eval(str); // str will be treated as strict mode code
+            }
+            function strict2(f, str){
+                "use strict";
+                return f(str); // not eval(...): str is strict if and only
+                               // if it invokes strict mode
+            }
+            function nonstrict(str){
+                return eval(str); // str is strict if and only
+                                  // if it invokes strict mode
+            }
+
+            strict1("'Strict mode code!'");
+            strict1("'use strict'; 'Strict mode code!'");
+            strict2(eval, "'Non-strict code.'");
+            strict2(eval, "'use strict'; 'Strict mode code!'");
+            nonstrict("'Non-strict code.'");
+            nonstrict("'use strict'; 'Strict mode code!'");
+
+            // Making eval and arguments simpler
+            eval = 17;
+            arguments++;
+            ++eval;
+            var obj = { set p(arguments) { } };
+            var eval;
+            try { } catch (arguments) { }
+            function x(eval) { }
+            function arguments() { }
+            var y = function eval() { };
+            var f = new Function("arguments", "'use strict'; return 17;");
+
+            function f(a){
+                "use strict";
+                a = 42;
+                return [a, arguments[0]];
+            }
+            var pair = f(17);
+            console.assert(pair[0] === 42);
+            console.assert(pair[1] === 17);
+
+            "use strict";
+            var f = function() { return arguments.callee; };
+            f(); // throws a TypeError
+
+            // with 와 eval() 은 대표적으로 사용하지말아야 할 키워드다.
+            // 어떤 책에서는 eval() 을 evil 로 불러버리기도 한다.
+            // 악마같은 존재를 배재하라는 뜻.
+
+            // 11. "Securing" JavaScript
+            "use strict";
+            function fun() { return this; }
+            console.assert(fun() === undefined);
+            console.assert(fun.call(2) === 2);
+            console.assert(fun.apply(null) === null);
+            console.assert(fun.call(undefined) === undefined);
+            console.assert(fun.bind(true)() === true);
+
+            function restricted()
+            {
+                "use strict";
+                restricted.caller;    // throws a TypeError
+                restricted.arguments; // throws a TypeError
+            }
+            function privilegedInvoker()
+            {
+                return restricted();
+            }
+            privilegedInvoker();
+
+            "use strict";
+            function fun(a, b)
+            {
+                "use strict";
+                var v = 12;
+                return arguments.caller; // throws a TypeError
+            }
+            fun(1, 2); // doesn't expose v (or a or b)
+
+            // 12. Paving the way for future ECMAScript versions
+            function package(protected){ // !!!
+                "use strict";
+                var implements; // !!!
+
+                interface: // !!!
+                while (true){
+                    break interface; // !!!
+                }
+
+                function private() { } // !!!
+            }
+            function fun(static) { 'use strict'; } // !!!
+
+            "use strict";
+            if (true){
+                function f() { } // !!! syntax error
+                f();
+            }
+
+            for (var i = 0; i < 5; i++){
+                function f2() { } // !!! syntax error
+                f2();
+            }
+
+            function baz(){ // kosher
+                function eit() { } // also kosher
+            }
+
+        </script>
+    </body>
+</html>

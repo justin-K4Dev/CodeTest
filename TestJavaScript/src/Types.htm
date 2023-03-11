@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+			
+			/*
+				숫자
+				문자열
+				불리언(true/false)
+				null
+				undefined
+				
+				객체가 아닌 데이터 타입을 원시 데이터 타입(primitive type)이라고 한다
+			*/
+					
+			// integer type
+			alert(1 + 1); 
+			alert(2 * 5);			
+			alert(6 / 2);
+			
+			// float type
+			alert(1.2 + 1.3);			
+			
+			// math operating
+			Math.pow(3,2);       // 9,   3의 2승 
+			Math.round(10.6);    // 11,  10.6을 반올림
+			Math.ceil(10.2);     // 11,  10.2를 올림
+			Math.floor(10.6);    // 10,  10.6을 내림
+			Math.sqrt(9);        // 3,   3의 제곱근
+			Math.random();       // 0부터 1.0 사이의 랜덤한 숫자
+			
+			// string type
+			alert("coding everybody");
+			alert('coding everybody');
+			
+			// typeof
+			alert(typeof "1");
+			
+			// alert('egoing's javascript'); <- error
+			
+			// multi-line
+			alert("Hello.\nWelcome to JavaScript World !!!");
+			// string + operator
+			alert("coding"+" everybody");
+			// string object
+			alert("coding everybody".length);
+			
+			
+			// string object
+			var str = 'coding';
+			console.log(str.length);        // 6
+			console.log(str.charAt(0));     // "C"
+			
+			var str = 'coding';
+			str.prop = 'everybody';
+			console.log(str.prop);      // undefined
+			
+			// str.prop를 하는 순간에 자바스크립트 내부적으로 String 객체가 만들어진다.
+			// prop 프로퍼티는 이 객체에 저장되고 이 객체는 곧 제거 된다.
+			// 그렇기 때문에 prop라는 속성이 저장된 객체는 존재하지 않게된다.
+			// 이러한 특징은 일반적인 객체의 동작 방법과는 다르다. 
+			
+			
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+		
+			// global
+			var vscope = 'global';
+			function fscope(){
+				alert(vscope);
+			}
+			fscope();
+			
+			// local & global
+			var vscope = 'global';
+			function fscope(){
+				var vscope = 'local';
+				alert('함수안 '+vscope);
+			}
+			fscope();
+			alert('함수밖 '+vscope);
+			
+			// local
+			var vscope = 'global';
+			function fscope(){
+				vscope = 'local';
+				alert('함수안'+vscope);
+			}
+			fscope();
+			alert('함수밖'+vscope);
+			
+			// global
+			function a (){
+				var i = 0;
+			}
+			for(var i = 0; i < 5; i++){
+				a();
+				document.write(i);
+			}
+			
+			// local - 본 예제는 무한반복을 발생시킨다. 			
+			function a (){
+				i = 0;
+			}
+			for(i = 0; i < 5; i++){
+				a();
+				document.write(i);
+			}
+			
+			// global object
+			MYAPP = {}
+			MYAPP.calculator = {
+				'left' : null,
+				'right' : null
+			}
+			MYAPP.coordinate = {
+				'left' : null,
+				'right' : null
+			}
+			 
+			MYAPP.calculator.left = 10;
+			MYAPP.calculator.right = 20;
+			function sum(){
+				return MYAPP.calculator.left + MYAPP.calculator.right;
+			}
+			document.write(sum());
+			
+			// function object
+			(function(){
+				var MYAPP = {}
+				MYAPP.calculator = {
+					'left' : null,
+					'right' : null
+				}
+				MYAPP.coordinate = {
+					'left' : null,
+					'right' : null
+				}
+				MYAPP.calculator.left = 10;
+				MYAPP.calculator.right = 20;
+				function sum(){
+					return MYAPP.calculator.left + MYAPP.calculator.right;
+				}
+				document.write(sum());
+			}())
+			
+			// Effective scope
+			for(var i = 0; i < 1; i++){
+				var name = 'coding everybody'; // 자바스크립트의 지역변수는 함수에서만 유효하다.
+			}
+			alert(name); // 'coding everybody'
+			
+			// Static scope & Lexical Scope
+			var i = 5;
+ 
+			function a(){
+				var i = 10;
+				b(); 
+			}
+			// 자바스크립트는 함수가 선언된 시점에서의 유효범위를 갖는다
+			function b(){
+				document.write(i);
+			}
+			a(); // 5
+
+        </script>
+    </body>
+</html>

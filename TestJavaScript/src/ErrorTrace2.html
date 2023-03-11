@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "Error2.js"></script>
+    <title>JavaScript Error Trace 2</title>
+    <din id="ConsoleView"></div>
+</head>
+<body>
+    <script type = "text/javascript">
+
+        try {
+            notDefinedObj.run(); //exception!
+        } catch (exception) {
+            //hit. it!
+            throw new errorObj.Error('ConsoleView', 'Hey, this is an error message!', 'Error.Factory.errorObj', exception);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+			
+			function Func() {
+				if(window === this){ // Function Object 일 경우 GlobalObject window 와 동일 !!!
+					document.write("window === this");
+				}
+			}
+			Func();
+			
+			var o = {
+				func : function(){
+					if(o === this){ // 일반 Object 일 경우 자기 자신의 객체와 같다
+						document.write("o === this <br />");
+					}
+				}
+			}
+			o.func();
+			
+			var funcThis = null; 
+ 
+			function Func(){
+				funcThis = this;
+			}
+			var o1 = Func();
+			if(funcThis === window){
+				document.write('window <br />');
+			}
+			 
+			var o2 = new Func();
+			if(funcThis === o2){ // new 사용시 일반 객체로 처리 !!!
+				document.write('o2 <br />');
+			}
+			
+			//
+			function Func(){
+				document.write(o);
+			}
+			var o = new Func();
+			
+			
+			var o = {}
+			var p = {}
+			
+			// apply method 를 활용해서 this 변경 조정 !!!
+			function Func(){
+				switch(this){
+					case o:
+						document.write('o<br />');
+						break;
+					case p:
+						document.write('p<br />');
+						break;
+					case window:
+						document.write('window<br />');
+						break;     
+				}
+			}
+			Func();
+			
+			Func.apply(o);
+			Func.apply(p);
+								
+        </script>
+    </body>
+</html>

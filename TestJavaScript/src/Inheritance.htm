@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+			
+			function Person(name){
+				this.name = name;
+				this.introduce = function(){
+					return 'My name is '+this.name; 
+				}   
+			}
+			var p1 = new Person('egoing');
+			document.write(p1.introduce() + "<br />");								
+			
+			
+			function Person2(name){
+				this.name = name;
+			}
+			Person2.prototype.name = null;
+			Person2.prototype.introduce = function(){
+				return 'My name is ' + this.name; 
+			}
+			
+			var p1 = new Person2('egoing');
+			document.write( p1.introduce() + "<br />" );
+			
+			// Inheritance
+			function Programmer(name){
+				this.name = name;
+			}
+			Programmer.prototype = new Person2();
+			 
+			var p1 = new Programmer('egoing');
+			document.write(p1.introduce() + "<br />");			
+			
+			// Inheritance Function Addition
+			function Person3(name){
+				this.name = name;
+			}
+			Person3.prototype.name=null;
+			Person3.prototype.introduce = function(){
+				return 'My name is '+this.name; 
+			}
+			 
+			function Programmer2(name){
+				this.name = name;
+			}
+			Programmer2.prototype = new Person();
+			Programmer2.prototype.coding = function(){
+				return "hello world";
+			}
+			 
+			var p1 = new Programmer2('egoing');
+			document.write(p1.introduce() + "<br />");
+			document.write(p1.coding() + "<br />");
+			
+        </script>
+    </body>
+</html>

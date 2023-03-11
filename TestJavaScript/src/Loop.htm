@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+			// loop
+			while(true){
+				document.write('coding everybody <br />');
+			}
+			while(false){
+				document.write('coding everybody <br />');
+			}
+			
+			var i = 0;
+			// 종료조건으로 i의 값이 10보다 작다면 true, 같거나 크다면 false가 된다.
+			while(i < 10){
+				// 반복이 실행될 때마다 coding everybody <br />이 출력된다. <br /> 줄바꿈을 의미하는 HTML 태그
+				document.write('coding everybody <br />');
+				// i의 값이 1씩 증가한다.
+				i++
+			}
+			
+			for(var i = 0; i < 10; i++){
+				document.write('coding everybody'+i+'<br />');
+			}
+			
+			var i = 0;
+			while(i < 10){
+				document.write('coding everybody '+i+'<br />');
+				i++;
+			}
+			
+			var i = 0;
+			while(i < 10){
+				document.write('coding everybody '+(i*2)+'<br />');
+				i++;
+			}
+			
+			// break
+			for(var i = 0; i < 10; i++){
+				if(i === 5) {
+					break;
+				}
+				document.write('coding everybody'+i+'<br />');
+			}
+			
+			// continue
+			for(var i = 0; i < 10; i++){
+				if(i === 5) {
+					continue;
+				}
+				document.write('coding everybody'+i+'<br />');
+			}
+						
+			// 0부터 9까지 변수 i에 순차적으로 값을 할당        
+			for(var i = 0; i < 10; i++) {
+				// 0부터 9까지의 변수를 j의 값에 순차적으로 할당
+				for(var j = 0; j < 10; j++) {
+					// i와 j의 값을 더한 후에 출력
+					// String은 숫자인 i와 j의 데이터 타입을 문자로 형태를 변환하는 명령이다. 
+					// String()을 제거하고 실행해보면 의미가 좀 더 분명하게 드러날 것이다.
+					document.write(String(i)+String(j)+'<br />');
+				}
+			}
+
+			// Define the callback function.
+			function ShowResults( value, index, ar ) {
+				document.write("value: " + value);
+				document.write(" index: " + index);
+				document.write("<br />");
+			}
+
+			// Create an array.
+			var letters = ['ab', 'cd', 'ef'];
+
+			// Call the ShowResults callback function for each
+			// array element.
+			letters.forEach( ShowResults );
+			// Output:
+			// value: ab index: 0
+			// value: cd index: 1
+			// value: ef index: 2
+						
+        </script>
+    </body>
+</html>

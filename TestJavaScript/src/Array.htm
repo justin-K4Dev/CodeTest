@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+			
+			// array
+			var member = ['egoing', 'k8805', 'sorialgi'];
+			alert(member[0]);
+			
+			// return array
+			function get_members(){
+				return ['egoing', 'k8805', 'sorialgi'];
+			}
+			var members = get_members();
+			document.write(members[0]);
+			
+			members = get_members();
+			// members.length는 배열에 담긴 값의 숫자를 알려준다. 
+			for(i = 0; i < members.length; i++){
+				// members[i].toUpperCase()는 members[i]에 담긴 문자를 대문자로 변환해준다.
+				document.write(members[i].toUpperCase());   
+				document.write('<br />');
+			}
+			
+			// insert single element in array
+			var li = ['a', 'b', 'c', 'd', 'e'];
+			li.push('f');
+			alert(li);
+			
+			// insert multiple element in array 
+			var li = ['a', 'b', 'c', 'd', 'e'];
+			li = li.concat(['f', 'g']);
+			alert(li);
+			
+			// insert element first position in array
+			var li = ['a', 'b', 'c', 'd', 'e'];
+			li.unshift('z');
+			alert(li);
+			
+			// splice in array
+			var li = ['a', 'b', 'c', 'd', 'e'];
+			li.splice(2, 0, 'B');
+			alert(li);
+			
+			// remove first element in array
+			var li = ['a', 'b', 'c', 'd', 'e'];
+			li.shift();
+			alert(li);
+			
+			// remove last element in array
+			var li = ['a', 'b', 'c', 'd', 'e'];
+			li.pop();
+			alert(li);
+			
+			// sort - ascending
+			var li = ['c', 'e', 'a', 'b', 'd'];
+			li.sort();
+			alert(li);
+			
+			// sort - descending
+			var li = ['c', 'e', 'a', 'b', 'd'];
+			li.reverse();
+			alert(li);
+			
+        </script>
+    </body>
+</html>

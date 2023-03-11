@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "Error1.js"></script>
+    <title>Coding Now !!!</title>
+    <din id="ConsoleView" style="background-color:#ff726b;"></div>
+    <din id="Result" style="background-color:#76ddff;"></div>
+</head>
+<body>
+    <script type = "text/javascript">
+
+        setErrorOutputHandleId('ConsoleView');
+
+        var Player = {
+            'attribList': {
+                'id': null,
+                'name': null,
+                'abilityList': {'sp': 0, 'ap': 0, 'dp': 0}
+            },
+            'updateAttribList' : function(values) {
+                for (var key in values) {
+                    if ('abilityList' !== key) {
+                        this.attribList[key] = values[key];
+                    }
+                    else {
+                        for(var ability in values.abilityList) {
+                            this.attribList.abilityList[ability] = values.abilityList[ability];
+                        }
+                    }
+                }
+            },
+            'show': function () {
+                for (var key in this.attribList) {
+                    if('abilityList' !== key) {
+                        var htmlCode = key + ': ' + this.attribList[key] + '<br/>';
+                        document.getElementById('Result').innerHTML += htmlCode;
+                    }
+                    else {
+                        for(var ability in this.attribList[key]) {
+                            var htmlCode = key + '.' + ability + ': ' + this.attribList.abilityList[ability] + '<br/>';
+                            document.getElementById('Result').innerHTML += htmlCode;
+                        }
+                    }
+                }
+            }
+        }
+        Player.show();
+
+        var objPlayer = Object.create(Player);
+        var attribList = {
+                'id': 1,
+                'name': 'justin',
+                'abilityList': {'sp': 10 }
+        };
+        objPlayer.updateAttribList(attribList);
+        objPlayer.show();
+
+        function ObjectInfo() {
+            this.infoList = {};
+            this.modifiedInfoList = {};
+        }
+        ObjectInfo.prototype.set = function(key, value) {
+            var prevValue = this.infoList[key];
+            this.infoList[key] = value;
+            if( prevValue !== value ) {
+                this.modifiedInfoList[key] = true;
+            }
+        };
+        ObjectInfo.prototype.get = function(key) {
+            return this.infoList[key];
+        };
+
+        function Character() {
+            this.attribList = {
+                'id': null,
+                'name': null,
+                'level': 0,
+                'hp': 0,
+                'abilityList': {'sp': 0, 'ap': 0, 'dp': 0}
+            };
+            this.itemList = {};
+        };
+        Character.prototype.updateAttribList = function(attribList) {
+            for (var key in attribList) {
+                if ('abilityList' !== key) {
+                    this.attribList[key] = attribList[key];
+                }
+                else {
+                    for(var ability in attribList.abilityList) {
+                        this.attribList.abilityList[ability] = attribList.abilityList[ability];
+                    }
+                }
+            }
+        };
+        Character.prototype.pushItem = function(item) {
+            this.itemList[item.id] = item;
+        };
+        Character.prototype.lookupItem = function(id) {
+            if(this.itemList[id] === undefined ) {
+                return null;
+            }
+            return this.itemList[id];
+        };
+        Character.prototype.show = function() {
+
+            //super.show();
+
+            for (var key in this.attribList) {
+                if('abilityList' !== key) {
+                    var htmlCode = key + ': ' + this.attribList[key] + '<br/>';
+                    document.getElementById('Result').innerHTML += htmlCode;
+                }
+                else {
+                    for(var ability in this.attribList[key]) {
+                        var htmlCode = key + '.' + ability + ': ' + this.attribList.abilityList[ability] + '<br/>';
+                        document.getElementById('Result').innerHTML += htmlCode;
+                    }
+                }
+            }
+
+            for (var key in this.itemList) {
+                var item = this.itemList[key];
+                document.getElementById('Result').innerHTML +='item' + ': { id: ' + item.id + ',' + 'name: ' + item.name + '}' + '<br/>';
+            }
+        };
+/*
+        var objCharacter = new Character;
+        // inheritance ObjectInfo
+        objCharacter.prototype = new ObjectInfo();
+
+        objCharacter.set('id', 100);
+        objCharacter.set('name', '호빵맨');
+
+        var attribList = {
+            'id': 1,
+            'name': 'justin',
+            'level': 1,
+            'hp': 100,
+            'abilityList': {'sp': 10 }
+        };
+        objCharacter.updateAttribList(attribList);
+
+        var item = { 'id' : 1, 'name' : '전설의 검' };
+        objCharacter.pushItem(item);
+
+        objCharacter.show();
+*/
+
+        var objTemplate = { a:0 };
+        Object.defineProperty(objTemplate, 'name', {
+            get: function(x) { return 100; }
+            set: function (x) { this.a = x / 2; }
+        });
+
+        for (k in objTemplate) {
+            Object.defineProperty(objTemplate, k, get:getter)
+        }
+
+        document.write(  );
+
+
+
+
+
+    </script>
+</body>
+</html>

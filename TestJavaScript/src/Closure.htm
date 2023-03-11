@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+			
+			// 함수내부에 함수를 작성할 경우 Closure 를 생성 !!!
+			// Closure 는 외부함수(포함하고 있는)의 변수에 접근할 수 있는 내부 함수를 말한다.
+			// Closure 가 접근 가능한 Scope Chain 3 가지 ( 전역변수, 자신을 생성해준 함수의 변수, 자신의 변수 )
+			
+			function outter1(){
+				function inner1(){
+					var title = 'coding everybody'; 
+					alert(title);
+				}
+				inner1();
+			}
+			outter1();
+			
+			function outter2(){
+				var title = 'coding everybody';  
+				function inner2(){        
+					alert(title);
+				}
+				inner2();
+			}
+			outter2();
+			
+			
+			function outter3(){
+				var title = 'coding everybody';  
+				return function(){        
+					alert(title);
+				}
+			}
+			inner3 = outter3();
+			inner3();
+			
+			
+			function factory_movie(title){
+				return {
+					get_title : function (){
+						return title;
+					},
+					set_title : function(_title){
+						title = _title
+					}
+				}
+			}
+			ghost = factory_movie('Ghost in the shell');
+			matrix = factory_movie('Matrix');
+			 
+			alert(ghost.get_title());
+			alert(matrix.get_title());
+			 
+			ghost.set_title('공각기동대');
+			 
+			alert(ghost.get_title());
+			alert(matrix.get_title());
+			
+			
+			var arr = []
+			for(var i = 0; i < 5; i++){
+				arr[i] = function(){
+					return i;
+				}
+			}
+			for(var index in arr) {
+				console.log(arr[index]()); // 5 5 5 5 5
+			}
+			
+			// 
+			var arr = []
+			for(var i = 0; i < 5; i++){
+				arr[i] = function(id) {
+					return function(){
+						return id;
+					}
+				}(i);
+			}
+			for(var index in arr) {
+				console.log(arr[index]()); // 0 1 2 3 4
+			}
+			
+			
+			function outerFunction () {
+				const outer = 'I’m the outer function!'
+				
+				function innerFunction() {
+					const inner = 'I’m the inner function!'
+					console.log(outer) // I’m the outer function!
+				}
+				
+				console.log(inner) // Error, inner is not defined
+			}			
+			
+			
+			var getCode = ( function(){
+				var secureCode = "0]Eal(eh&2"; // A code we do not want outsiders to be able to modify...
+			  
+				return function () {
+					return secureCode;
+				};
+			})();
+
+			getCode(); // Returns the secureCode <- "0]Eal(eh&2" 			
+			
+        </script>
+    </body>
+</html>

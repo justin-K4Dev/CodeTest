@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+
+            // 기본적으로 핸들러로 호출되는 람다함수(익명함수)들의 this 는 전역객체(window)이기 때문에
+            // 타이머라든지 이밴트 핸들러의 콜백함수로 호출이 될때도
+            // 특정 객체와 연결하여 this 를 유지 하고 싶을때 bind 함수로 해결할수 있다.
+            // bind 함수는 실행 될때의 함수를 특정객체의 범위에 묶어버리는 것이다.
+            // 쉽게 말하면 bind는 함수 내의 this를 변경 시키려는 것이 목적이다.
+            //
+            // ex : fun.bind(object,arg1,....argn)
+            //
+            // 자바스크립트는 function 도 객체이기 때문에 .bind 메서드 사용이 가능하며
+            // function prototype 멤버로 bind 메서드가 존재한다.
+            // ie는 9 이상 부터 지원
+            // ECMAScript 5 에서 추가되었다.
+            //
+            // 함수 선언문이 아닌 표현식함수(익명함수)에만 바인딩 할 수 있다.
+
+
+            //
+            // Creating a bound function
+            //
+            // The simplest use of bind() is to make a function that,
+            // no matter how it is called, is called with a particular this value.
+            // A common mistake for new JavaScript programmers is to extract a method from an object,
+            // then to later call that function
+            // and expect it to use the original object as its this (e.g. by using that method in callback-based code).
+            // Without special care, however, the original object is usually lost.
+            // Creating a bound function from the function,
+            // using the original object, neatly solves this problem:
+
+            this.x = 9;
+            var module = {
+                x: 81,
+                getX: function() { return this.x; }
+            };
+
+            module.getX(); // 81
+
+            var retrieveX = module.getX;
+            retrieveX(); // 9, because in this case, "this" refers to the global(window) object
+
+            // this 에 module 을 입력하고 새로운 함수를 만들어 낸다
+            var boundGetX = retrieveX.bind(module);
+            boundGetX(); // 81
+
+
+            //
+            // Partial Functions
+            //
+            // The next simplest use of bind() is to make a function with pre-specified initial arguments.
+            // These arguments (if any) follow the provided this value
+            // and are then inserted at the start of the arguments passed to the target function,
+            // followed by the arguments passed to the bound function, whenever the bound function is called.
+
+            function list() {
+                return Array.prototype.slice.call(arguments);
+            }
+
+            var list1 = list(1, 2, 3); // [1, 2, 3]
+
+            // Create a function with a preset leading argument
+            var leadingThirtysevenList = list.bind(undefined, 37);
+
+            var list2 = leadingThirtysevenList(); // [37]
+            var list3 = leadingThirtysevenList(1, 2, 3); // [37, 1, 2, 3]
+
+
+            //
+            // With setTimeout
+            //
+            // By default within window.setTimeout(), the this keyword will be set to the window (or global) object.
+            // When working with class methods that require this to refer to class instances,
+            // you may explicitly bind this to the callback function,
+            // in order to maintain the instance.
+
+            function LateBloomer() {
+                this.petalCount = Math.ceil(Math.random() * 12) + 1;
+            }
+
+            // Declare bloom after a delay of 1 second
+            LateBloomer.prototype.bloom = function() {
+                window.setTimeout(this.declare.bind(this), 1000);
+            };
+
+            LateBloomer.prototype.declare = function() {
+                console.log('I am a beautiful flower with ' + this.petalCount + ' petals!');
+            };
+
+            var flower = new LateBloomer();
+            flower.bloom();// after 1 second, triggers the 'declare' method
+
+
+            //
+            // Bound functions used as constructors
+            //
+            // Bound functions are automatically suitable for use
+            // with the new operator to construct new instances created by the target function.
+            // When a bound function is used to construct a value, the provided this is ignored.
+            // However, provided arguments are still prepended to the constructor call:
+
+            function Point(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+
+            Point.prototype.toString = function() {
+                return this.x + ',' + this.y;
+            };
+
+            var p = new Point(1, 2);
+            p.toString(); // '1,2'
+
+            var emptyObj = {};
+            var YAxisPoint = Point.bind(emptyObj, 0/*x*/);
+            // not supported in the polyfill below,
+            // works fine with native bind:
+            var YAxisPoint = Point.bind(null, 0/*x*/);
+
+            var axisPoint = new YAxisPoint(5);
+            axisPoint.toString(); // '0,5'
+
+            axisPoint instanceof Point; // true
+            axisPoint instanceof YAxisPoint; // true
+            new Point(17, 42) instanceof YAxisPoint; // true
+
+            // Note that you need do nothing special to create a bound function for use with new.
+            // The corollary is that you need do nothing special to create a bound function to be called plainly,
+            // even if you would rather require the bound function to only be called using new.
+
+            // Example can be run directly in your JavaScript console
+            // ...continuing from above
+
+            // Can still be called as a normal function
+            // (although usually this is undesired)
+            YAxisPoint(13);
+
+            emptyObj.x + ',' + emptyObj.y;
+            // >  '0,13'
+
+            // If you wish to support use of a bound function only using new,
+            // or only by calling it, the target function must enforce that restriction.
+
+            //
+            // Creating shortcuts
+            //
+            // bind() is also helpful in cases
+            // where you want to create a shortcut to a function which requires a specific this value.
+
+            // Take Array.prototype.slice,
+            // for example, which you want to use for converting an array-like object to a real array.
+            // You could create a shortcut like this:
+            var slice = Array.prototype.slice;
+
+            // ...
+
+            slice.apply(arguments);
+
+            // With bind(), this can be simplified.
+            // In the following piece of code,
+            // slice is a bound function to the apply() function of Function.prototype,
+            // with the this value set to the slice() function of Array.prototype.
+            // This means that additional apply() calls can be eliminated:
+            // same as "slice" in the previous example
+            var unboundSlice = Array.prototype.slice;
+            var slice = Function.prototype.apply.bind(unboundSlice);
+
+            // ...
+
+            slice(arguments);
+
+            //
+            // Polyfill
+            //
+            // The bind function is an addition to ECMA-262, 5th edition; as such it may not be present in all browsers.
+            // You can partially work around this by inserting the following code at the beginning of your scripts,
+            // allowing use of much of the functionality of bind() in implementations that do not natively support it.
+            if (!Function.prototype.bind) {
+                Function.prototype.bind = function(oThis) {
+                    if (typeof this !== 'function') {
+                        // closest thing possible to the ECMAScript 5
+                        // internal IsCallable function
+                        throw new TypeError('Function.prototype.bind - what is trying to be bound is not callable');
+                    }
+
+                    var aArgs   = Array.prototype.slice.call(arguments, 1),
+                            fToBind = this,
+                            fNOP    = function() {},
+                            fBound  = function() {
+                                return fToBind.apply(this instanceof fNOP
+                                                ? this
+                                                : oThis,
+                                        aArgs.concat(Array.prototype.slice.call(arguments)));
+                            };
+
+                    if (this.prototype) {
+                        // native functions don't have a prototype
+                        fNOP.prototype = this.prototype;
+                    }
+                    fBound.prototype = new fNOP();
+
+                    return fBound;
+                };
+            }
+
+            // Some of the many differences (there may well be others,
+            // as this list does not seriously attempt to be exhaustive)
+            // between this algorithm and the specified algorithm are:
+
+            // * The partial implementation relies on Array.prototype.slice(),
+            //   Array.prototype.concat(), Function.prototype.call() and Function.prototype.apply(),
+            //   built-in methods to have their original values.
+            // * The partial implementation creates functions that do not have immutable "poison pill" caller
+            //   and arguments properties that throw a TypeError upon get, set, or deletion.
+            //   (This could be added if the implementation supports Object.defineProperty,
+            //   or partially implemented [without throw-on-delete behavior]
+            //   if the implementation supports the __defineGetter__ and __defineSetter__ extensions.)
+            // * The partial implementation creates functions that have a prototype property.
+            //   (Proper bound functions have none.)
+            // * The partial implementation creates bound functions whose length property does not agree with
+            //   that mandated by ECMA-262: it creates functions with length 0, while a full implementation,
+            //   depending on the length of the target function and the number of pre-specified arguments,
+            //   may return a non-zero length.
+            //
+            // If you choose to use this partial implementation, you must not rely on those cases
+            // where behavior deviates from ECMA-262, 5th edition! With some care,
+            // however (and perhaps with additional modification to suit specific needs),
+            // this partial implementation may be a reasonable bridge to the time
+            // when bind() is widely implemented according to the specification.
+
+        </script>
+    </body>
+</html>

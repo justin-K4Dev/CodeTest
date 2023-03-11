@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="../src/greeting.js"></script>
+    </head>
+    <body>
+        <script>
+            // The shorthand syntax is similar to the getter
+            // and setter syntax introduced in ECMAScript 5.
+            var obj = {
+                foo: function() {},
+                bar: function() {}
+            };
+
+            // You are now able to shorten this to:
+            var obj = {
+                foo() {},
+            bar() {}
+            };
+
+            // Shorthand generator methods
+            // Generator methods can be defined using the shorthand syntax as well.
+            // Note that the asterisk (*) in the shorthand syntax must be before the generator property name.
+            // That is, * g(){} will work but g *(){} will not.
+
+            // Using a named property (pre-ES6)
+            var obj2 = {
+                g: function*() {
+                var index = 0;
+                while(true)
+                    yield index++;
+            }
+            };
+
+            // The same object using shorthand syntax
+            var obj2 = {
+                    * g() {
+                var index = 0;
+                while(true)
+                    yield index++;
+            }
+            };
+
+            var it = obj2.g();
+            console.log(it.next().value); // 0
+            console.log(it.next().value); // 1
+
+            // Method definitions are not constructable
+            // All method definitions are not constructors and will throw a TypeError if you try to instantiate them.
+            var obj = {
+                method() {},
+            };
+            new obj.method; // TypeError: obj.method is not a constructor
+
+            var obj = {
+                    * g() {}
+            };
+            new obj.g; // TypeError: obj.g is not a constructor (changed in ES2016)
+
+            // Examples
+            // Simple test case
+            var obj = {
+                a : "foo",
+                b(){ return this.a; }
+            };
+            console.log(obj.b()); // "foo"
+
+            // Computed property names
+            // The shorthand syntax also supports computed property names.
+            var bar = {
+                foo0 : function() { return 0; },
+                foo1() { return 1; },
+            ["foo" + 2]() { return 2; },
+            };
+            console.log(bar.foo0()); // 0
+            console.log(bar.foo1()); // 1
+            console.log(bar.foo2()); // 2
+
+        </script>
+    </body>
+</html>
+

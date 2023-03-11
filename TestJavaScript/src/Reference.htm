@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+			
+			var a = 1;
+			var b = a;
+			b = 2;
+			console.log(a); // 1
+			
+			// Referance
+			var a = {'id':1};
+			var b = a;
+			b.id = 2;
+			console.log(a.id);  // 2
+			
+			
+			var a = 1;
+			function func(b){
+				b = 2;
+			}
+			func(a);
+			console.log(a); // 1
+			
+			// No Reference - Not change !!!
+			var a = {'id':1};
+			function func(b){
+				b = {'id':2}; // b 에 새로 할당 !!!
+			}
+			func(a);
+			console.log(a.id);  // 1
+			
+			// Reference
+			var a = {'id':1};
+			function func(b){
+				b.id = 2; // 참조된 b 에 2 설정 !!!
+			}
+			func(a);
+			console.log(a.id);  // 2
+			
+			
+        </script>
+    </body>
+</html>

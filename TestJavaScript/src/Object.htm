@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+		<script src="../src/Person.js"></script>
+    </head>
+    <body>
+        <script>
+
+			// Core Object
+			// Math, Object, Array, String 객체 !!!
+
+			// OOP 설계 & 구현 방법
+
+			// define the Student class
+			function Student() {
+				// Call the parent constructor
+				Person.call(this);
+			}
+
+			// add member method
+			Student.goToSchool = function(pos) {
+				alert('Let's go to School : Pos' + pos);
+			}
+
+			// inherit Person
+			Student.prototype = new Person();
+			// 아래 구현 방법도 가능 !!!
+			// Student.prototype = Object.create(Person.prototype);
+
+			// correct the constructor pointer because it points to Person
+			Student.prototype.constructor = Student;
+
+			// replace the sayHello method
+			Student.prototype.sayHello = function(){
+				alert('hi, I am a student');
+			}
+
+			// add sayGoodBye method
+			Student.prototype.sayGoodBye = function() {
+				alert('goodBye');
+			}
+
+			var student1 = new Student();
+			student1.sayHello();
+			student1.walk();
+			student1.sayGoodBye();
+
+			// check inheritance
+			alert(student1 instanceof Person); // true
+			alert(student1 instanceof Student); // true
+
+			// define the Car Class
+			function Car(name) {
+				this.name = name;
+				alert('Car instantiated');
+			}
+
+			Car.prototype.go = function(){
+				alert ('go !');
+			};
+			Person.prototype.stop = function(){
+				alert ('stop !');
+			};
+
+			// object allocation & member setting
+			var obj = {
+				property_1 : 1,		// property_# may be an identifier...
+				2 :          10,   	// or a number...
+				// ...,
+				"property n" : 1000
+			}; // or a string
+
+			// object allocation & member setting
+			var grades = {
+				'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+				'show' : function(){
+					for(var name in this.list){
+						document.write(name+':'+this.list[name]+"<br />");
+					}
+				}
+			};
+			grades.show();
+
+			// object allocation after member setting
+			var grades = new Object();
+			grades['egoing'] = 10;
+			grades['k8805'] = 6;
+			grades['sorialgi'] = 80;
+			grades.years = '1992';
+
+			var propertyName = 'data';
+			grades[propertyName] = 14567;
+
+			var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+			alert(grades['sorialgi']);
+			alert(grades.sorialgi);
+			
+			var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+			for( key in grades ) {
+				document.write("key : " + key + " value : " + grades[key] + "<br />");
+			}
+
+			// object extension
+			Object.prototype.contain = function(neddle) {
+				for(var name in this){
+					if(this[name] === neddle){
+						return true;
+					}
+				}
+				return false;
+			}
+
+			var o = {'name':'egoing', 'city':'seoul'}
+			document.write(o.contain('egoing'));
+			var p = {color: "red", wheels: 4, engine: {cylinders: 4, size: 2.2}};
+			document.write(p.contain('red'));
+			var a = ['egoing','leezche','grapittie'];
+			document.write(a.contain('leezche'));
+			
+			for(var name in o) {
+				if (o.hasOwnProperty(name)) {
+					document.write(name);
+				}
+			}
+
+			// return all PropertyName list of object
+			function listAllProperties(o) {
+				var objectToInspect;
+				var result = [];
+
+				for(objectToInspect = o; objectToInspect !== null; objectToInspect = Object.getPrototypeOf(objectToInspect)){
+					result = result.concat(Object.getOwnPropertyNames(objectToInspect));
+				}
+
+				return result;
+			}
+
+			// Animal properties and method encapsulation
+			var Animal = {
+				type: "Invertebrates", // Default value of properties
+				displayType : function(){  // Method which will display type of Animal
+					document.write((this.type);
+				}
+			}
+
+			// Create new animal type called animal1
+			var animal1 = Object.create(Animal);
+			animal1.displayType(); // Output:Invertebrates
+
+			// Create new animal type called Fishes
+			var fish = Object.create(Animal);
+			fish.type = "Fishes";
+			fish.displayType(); // Output:Fishes
+
+			// getter & setter
+			var o = {
+				a: 7,
+				get b() {
+					return this.a + 1;
+				},
+				set c(x) {
+					this.a = x / 2
+				}
+			};
+
+			document.write(o.a);
+			document.write(o.b);
+			o.c = 10;
+			document.write(o.b);
+
+			var d = Date.prototype;
+			Object.defineProperty(d, "year", {
+				get: function() {return this.getFullYear() },
+				set: function(y) { this.setFullYear(y) }
+			});
+
+
+			var o = { a:0 };
+
+			Object.defineProperties(o, {
+				"b": { get: function () { return this.a + 1; } },
+				"c": { set: function (x) { this.a = x / 2; } }
+			});
+
+			o.c = 10 // Runs the setter, which assigns 10 / 2 (5) to the 'a' property
+			document.write(o.b); // Runs the getter, which yields a + 1 or 6
+
+
+			// 새 객체 myobj를 두 개의 속성 a, b 와 함께 생성
+			var myObj = new Object;
+			myObj.a = 5;
+			myObj.b = 12;
+
+			// 속성을 삭제. myObj 에는 속성 b 만 남게 됨.
+			delete myObj.a;
+			document.write("a" in myObj); // "false"를 출력
+
+			// 전역 변수 삭제
+			g = 17;
+			delete g;
+
+			
+        </script>
+    </body>
+</html>

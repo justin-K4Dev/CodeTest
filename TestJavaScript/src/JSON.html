@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "Error1.js"></script>
+    <title>JSON object !!!</title>
+    <din id="ConsoleView" style="background-color:#ff726b;"></div>
+        <din id="Result" style="background-color:#76ddff;"></div>
+</head>
+<body>
+    <script type = "text/javascript">
+
+        setErrorOutputHandleId('ConsoleView');
+
+        // json 객체 생성
+        var json = { 'jsonObj' : 100 };
+        document.write( JSON.stringify(json) + '<br/>');
+
+        // json 객체를 문자열로 변환
+        var itemList = '';
+        for (var i = 1; i <= 5; ++i) {
+            var itemObj = {};
+            var itemId = 'item' + i + '_id';
+            itemObj[itemId] = i;
+            var itemLevel = 'item' + i + '_level';
+            itemObj[itemLevel] = i;
+
+            itemList += JSON.stringify(itemObj);
+        }
+        itemList = itemList.replace(/}{/g, ",");
+        itemList = itemList.replace(/^{+|}+$/g, "");
+        document.write(itemList + '<br/>');
+
+        // 문자열을 json 객체로 변환
+        var name = '"하하"'; // 문자열 데이터는 '"string"' 이렇게 감싸 주어야 함 !!!
+        var jsonObj = '{' + '"id":' + 1 + "," + '"name":' + name + "," + itemList + '}';
+        document.write(jsonObj + '<br/>');
+        jsonObj = JSON.parse(jsonObj);
+        document.write(jsonObj);
+
+    </script>
+</body>
+</html>

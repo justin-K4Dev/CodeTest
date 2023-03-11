@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Exception</title>
+</head>
+<body>
+	<script>
+
+		try {
+			abcd.run(); // 없는객체의 없는 메서드이기 때문에 예외 발생
+		}
+		catch (exception) {
+			alert('예외 발생시 실행 되는 catch 구문');
+		}
+		finally {
+			alert('예외 발생 여부 상관없이 실행 되는 finaylly 구문');
+		}
+
+	</script>
+</body>
+</html>
