@@ -1,0 +1,1 @@
+link K:/my-project/TestCode/TestDOSBatch/Command/link/target_a.txt

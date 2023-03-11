@@ -1,0 +1,736 @@
+List of DOS commands
+
+APPEND
+Sets the path to be searched for data files or displays the current search path.
+The APPEND command is similar to the PATH command that tells DOS where to search for program files
+(files with a .COM, . EXE, or .BAT file name extension).
+
+The command is available in MS-DOS versions 3.2 and later.
+
+ASSIGN
+Further information: Drive letter assignment
+The command redirects requests for disk operations on one drive to a different drive.
+It can also display drive assignments or reset all drive letters to their original assignments.
+
+The command is available in MS-DOS versions 3 through 5 and IBM PC DOS releases 2 through 5.
+
+ATTRIB
+Main article: ATTRIB
+Attrib changes or views the attributes of one or more files.
+It defaults to display the attributes of all files in the current directory.
+The file attributes available include read-only, archive, system, and hidden attributes.
+The command has the capability to process whole folders and subfolders of files and also process all files.
+
+The command is available in MS-DOS versions 3 and later.[1]
+
+BACKUP and RESTORE
+These are commands to backup and restore files from an external disk.
+These appeared in version 2, and continued to PC DOS 5 and MS-DOS 6 (PC DOS 7 had a deversioned check).
+In DOS 6, these were replaced by commercial programs (CPBACKUP, MSBACKUP), which allowed files to be restored to different locations.
+
+BASIC and BASICA
+Main article: IBM BASIC
+An implementation of the BASIC programming language for PCs.
+Implementing BASIC in this way was very common in operating systems on 8- and 16-bit machines made in the 1980s.
+
+IBM computers had BASIC 1.1 in ROM, and IBM's versions of BASIC used code in this ROM-BASIC,
+which allowed for extra memory in the code area.
+BASICA last appeared in IBM PC DOS 5.02,
+and in OS/2 (2.0 and later), the version had ROM-BASIC moved into the program code.
+
+Microsoft released GW-BASIC for machines with no ROM-BASIC.
+Some OEM releases had basic.com and basica.com as loaders for GW-BASIC.EXE.
+
+BASIC was dropped after MS-DOS 4, and PC DOS 5.02.
+OS/2 (which uses PC DOS 5), has it, while MS-DOS 5 does not.
+
+BREAK
+This command is used to instruct DOS to check whether the Ctrl and Break keys have been pressed before carrying out a program request.
+
+The command is available in MS-DOS versions 2 and later.
+
+CALL
+See also: start (command)
+Starts a batch file from within another batch file and returns when that one ends.
+
+The command is available in MS-DOS versions 3.3 and later.
+
+CD and CHDIR
+Main article: cd (command)
+The CHDIR (or the alternative name CD) command either displays or changes the current working directory.
+
+The command is available in MS-DOS versions 2 and later.
+
+CHCP
+The command either displays or changes the active code page used to display character glyphs in a console window.
+
+The command is available in MS-DOS versions 3.3 and later.
+
+CHKDSK
+Main article: CHKDSK
+CHKDSK verifies a storage volume (for example, a hard disk, disk partition or floppy disk) for file system integrity.
+The command has the ability to fix errors on a volume and recover information from defective disk sectors of a volume.
+
+The command is available in MS-DOS versions 1 and later.
+
+CHOICE
+Main article: choice (command)
+The CHOICE command is used in batch files to prompt the user to select one item from a set of single-character choices.
+Choice was introduced as an external command with MS-DOS 6.0; Novell DOS 7 and PC DOS 7.0.
+Earlier versions of DR DOS supported this function with the built-in switch command (for numeric choices) or by beginning a command with a question mark.
+This command was formerly called ync (yes-no-cancel).
+
+CLS
+Main article: cls (command)
+The CLS or CLRSCR command clears the terminal screen.
+
+The command is available in MS-DOS versions 2 and later.
+
+COMMAND
+Main article: COMMAND.COM
+Start a new instance of the command interpreter.
+
+The command is available in MS-DOS versions 1 and later.
+
+COMP
+Main article: comp (command)
+Show differences between any two files, or any two sets of files.
+
+The command is available in MS-DOS versions 3.3 through 5 and IBM PC DOS releases 1 through 5.
+
+COPY
+Main article: copy (command)
+Makes copies of existing files.
+
+The command is available in MS-DOS versions 1 and later.
+
+CTTY
+Defines the terminal device (for example, COM1) to use for input and output.
+
+The command is available in MS-DOS versions 2 and later.
+
+CV
+[icon]	
+This section needs expansion. You can help by adding to it. (May 2019)
+DATE
+Displays the system date and prompts the user to enter a new date. Complements the TIME command.
+
+The command is available in MS-DOS versions 1 and later.
+
+DBLBOOT
+[icon]	
+This section needs expansion. You can help by adding to it. (May 2019)
+DBLSPACE
+Main article: DriveSpace
+A disk compression utility supplied with MS-DOS version 6.0 (released in 1993) and version 6.2.
+
+DEBUG
+Main article: debug (command)
+A very primitive assembler and disassambler.
+
+DEFRAG
+Main article: Microsoft Drive Optimizer
+The command has the ability to analyze the file fragmentation on a disk drive or to defragment a drive.
+This command is called DEFRAG in MS-DOS/PC DOS and diskopt in DR-DOS.
+
+The command is available in MS-DOS versions 6 and later.
+
+DEL and ERASE
+Main article: del (command)
+DEL (or the alternative form ERASE) is used to delete one or more files.
+
+The command is available in MS-DOS versions 1 and later.
+
+DELTREE
+Main article: DELTREE
+Deletes a directory along with all of the files and subdirectories that it contains.
+Normally, it will ask for confirmation of the potentially dangerous action.
+Since the RD (RMDIR) command can not delete a directory if the directory is not empty,
+the DELTREE command can be used to delete the whole directory.
+
+The deltree command is included in certain versions of Microsoft Windows and MS-DOS operating systems.
+It is specifically available only in versions of MS-DOS 6.0 and higher, and in Microsoft Windows 9x.
+In Windows NT, the functionality provided exists but is handled by the command rd or rmdir which has slightly different syntax.
+This command has been deprecated for Windows 7.
+
+DIR
+Main article: dir (command)
+The DIR command displays the contents of a directory.
+The contents comprise the disk's volume label and serial number; one directory or filename per line,
+including the filename extension, the file size in bytes, and the date and time the file was last modified;
+and the total number of files listed, their cumulative size, and the free space (in bytes) remaining on the disk.
+The command is one of the few commands that exist from the first versions of DOS.
+The command can display files in subdirectories.
+The resulting directory listing can be sorted by various criteria and filenames can be displayed in a chosen format.
+
+DISKCOMP
+Main article: diskcomp
+A command for comparing the complete contents of a floppy disk to another one.
+
+The command is available in MS-DOS versions 3.2 and later and IBM PC DOS releases 1 and later.
+
+DISKCOPY
+Main article: diskcopy
+A command for copying the complete contents of a diskette to another diskette.
+
+The command is available in MS-DOS versions 2 and later.
+
+DOSKEY
+Main article: DOSKEY
+A command that adds command history, macro functionality, and improved editing features to the command-line interpreter.
+
+The command is available in MS-DOS versions 5 and later.
+
+DRVSPACE
+Main article: DriveSpace
+A disk compression utility supplied with MS-DOS version 6.22.
+
+ECHO
+Main article: echo (command)
+The ECHO command prints its own arguments back out to the DOS equivalent of the standard output stream.
+(Hence the name, ECHO) Usually, this means directly to the screen, but the output of echo can be redirected, like any other command,
+to files or devices. Often used in batch files to print text out to the user.
+
+Another important use of the echo command is to toggle echoing of commands on and off in batch files.
+Traditionally batch files begin with the @echo off statement.
+This says to the interpreter that echoing of commands should be off during the whole execution of the batch file,
+thus resulting in a "tidier" output (the @ symbol declares that this particular command (echo off) should also be executed without echo.)
+
+The command is available in MS-DOS versions 2 and later.
+
+EDIT
+Main article: MS-DOS Editor
+EDIT is a full-screen text editor, included with MS-DOS versions 5 and 6, OS/2 and Windows NT to 4.0
+The corresponding program in Windows 95 and later, and Windows 2000 and later is Edit v2.0. PC DOS 6
+and later use the DOS E Editor and DR-DOS used editor up to version 7.
+
+EDLIN
+Main article: Edlin
+DOS line-editor. It can be used with a script file, like debug, this makes it of some use even today.
+The absence of a console editor in MS-DOS/PC DOS 1-4 created an after-market for third-party editors.
+
+In DOS 5, an extra command "?" was added to give the user much-needed help.
+
+DOS 6 was the last version to contain EDLIN; for MS-DOS 6, it's on the supplemental disks, while PC DOS 6 had it in the base install.
+Windows NT 32-bit, and OS/2 have Edlin.
+
+EMM386
+Main article: EMM386
+
+This section needs expansion. You can help by adding to it. (July 2019)
+The EMM386 command enables or disables EMM386 expanded-memory support on a computer with an 80386 or higher processor.
+
+The command is available in MS-DOS versions 5 and later.
+
+EXE2BIN
+Main article: exe2bin
+Converts an executable (.exe) file into a binary file with the extension .com, which is a memory image of the program.
+
+The size of the resident code and data sections combined in the input .exe file must be less than 64 KB
+The file must also have no stack segment.
+
+The command is available in MS-DOS versions 1 through 5.
+It is available separately for version 6 on the Supplemental Disk.
+
+EXIT
+Main article: exit (command)
+Exits the current command processor.
+If the exit is used at the primary command, it has no effect unless in a DOS window under Microsoft Windows,
+in which case the window is closed and the user returns to the desktop.
+
+The command is available in MS-DOS versions 2 and later.
+
+EXPAND
+The Microsoft File Expansion Utility is used to uncompress one or more compressed cabinet files (.CAB).
+The command dates back to 1990 and was supplied on floppy disc for MS-DOS versions 5 and later.
+
+FAKEMOUS
+This section needs expansion. You can help by adding to it. (May 2019)
+FASTHELP
+See also: help (command)
+Provides information for MS-DOS commands.
+
+FASTOPEN
+Main article: FASTOPEN
+A command that provides accelerated access to frequently-used files and directories.
+
+The command is available in MS-DOS versions 3.3 and later.
+
+FC
+Main article: File Compare
+Show differences between any two files, or any two sets of files.
+
+The command is available in MS-DOS versions 2 and later – primarily non-IBM releases.
+
+FDISK
+Main article: fdisk
+The FDISK command manipulates hard disk partition tables.
+The name derives from IBM's habit of calling hard drives fixed disks.
+FDISK has the ability to display information about, create, and delete DOS partitions or logical DOS drive.
+It can also install a standard master boot record on the hard drive.
+
+The command is available in MS-DOS versions 3.2 and later and IBM PC DOS releases and later.
+
+FIND
+Main article: Find (Windows)
+The FIND command is a filter to find lines in the input data stream that contain or don't contain a specified string
+and send these to the output data stream. It may also be used as a pipe.
+
+The command is available in MS-DOS versions 2 and later.
+
+FINDSTR
+The FINDSTR command is a GREP-oriented FIND-like utility.
+Among its uses is the logical-OR lacking in FIND.
+
+FINDSTR "YES NO MAYBE" *.txt
+would find all files with one or more of the above-listed words YES, NO, MAYBE.
+
+FOR
+Main article: For loop
+Iteration: repeats a command for each out of a specified set of files.
+The FOR loop can be used to parse a file or the output of a command.
+
+The command is available in MS-DOS versions 2 and later.
+
+FORMAT
+Main article: format (command)
+Deletes the FAT entries and the root directory of the drive/partition, and reformats it for MS-DOS.
+In most cases, this should only be used on floppy drives or other removable media.
+This command can potentially erase everything on a computer's drive.
+
+The command is available in MS-DOS versions 1 and later.
+
+GOTO
+Main article: Goto
+The Goto command transfers execution to a specified label.
+Labels are specified at the beginning of a line, with a colon (:likethis).
+
+The command is available in MS-DOS versions 2 and later.
+
+Used in Batch files.
+
+GRAFTABL
+Main article: GRAFTABL
+
+This section needs expansion. You can help by adding to it. (July 2019)
+The GRAFTABL command enables the display of an extended character set in graphics mode.
+
+The command is available in MS-DOS versions 3 through 5.[1]
+
+GRAPHICS
+A TSR program to enable the sending of graphical screen dump to printer by pressing <Print Screen>.
+
+The command is available in MS-DOS versions 3.2 and later and IBM PC DOS releases 2 and later.
+
+HELP
+Main article: help (command)
+Gives help about DOS commands.
+
+The command is available in MS-DOS versions 5 thru Windows XP. Full-screen command help is available in MS-DOS versions 6 and later.
+Beginning with Windows XP, the command processor "DOS" offers builtin-help for commands by using "/?" (e.g. COPY /?)
+
+IF
+Main article: Control flow
+IF is a conditional statement, that allows branching of the program execution.
+It evaluates the specified condition, and only if it is true, then it executes the remainder of the command line.
+Otherwise, it skips the remainder of the line and continues with next command line.
+
+Used in Batch files.
+
+The command is available in MS-DOS versions 2 and later.
+
+INTERSVR and INTERLNK
+In MS-DOS; filelink in DR-DOS.
+
+Network PCs using a null modem cable or LapLink cable.
+The server-side version of InterLnk, it also immobilizes the machine it's running on as it is an active app (As opposed to a TSR app)
+which must be running for any transfer to take place.
+DR-DOS' filelink is executed on both the client and server.
+
+New in PC DOS 5.02, MS-DOS 6.0.
+
+JOIN
+The JOIN command attaches a drive letter to a specified directory on another drive.
+The opposite can be achieved via the SUBST command.
+
+The command is available in MS-DOS versions 3 through 5.
+It is available separately for versions 6.2 and later on the Supplemental Disk.
+
+KEYB
+The KEYB command is used to select a keyboard layout.
+
+The command is available in MS-DOS versions 3.3 and later.
+
+LABEL
+Main article: label (command)
+Changes the label on a logical drive, such as a hard disk partition or a floppy disk.
+
+The command is available in MS-DOS versions 3.1 and later and IBM PC DOS releases 3 and later.
+
+LOADFIX
+Loads a program above the first 64K of memory, and runs the program.
+The command is available in MS-DOS versions 5 and later.
+It is included only in MS-DOS/PC DOS. DR-DOS used memmax, which opened or closed lower, upper,
+and video memory access, to block the lower 64K of memory.
+
+LOADHIGH and LH
+Main article: loadhigh
+A command that loads a program into the upper memory area.
+
+The command is available in MS-DOS versions 5 and later.
+
+It is called hiload in DR-DOS.
+
+MD or MKDIR
+Main article: mkdir
+Makes a new directory.
+The parent of the directory specified will be created if it does not already exist.
+
+The command is available in MS-DOS versions 2 and later.
+
+MEM
+Displays memory usage. It is capable of displaying program size and status, memory in use, and internal drivers.
+It is an internal command.
+
+The command is available in MS-DOS versions 4 and later.
+
+MEMMAKER
+Starting with version 6, MS-DOS included the external program MemMaker which was used to free system memory (especially Conventional memory) by automatically reconfiguring the AUTOEXEC.BAT and CONFIG.SYS files.
+This was usually done by moving TSR programs and device drivers to the upper memory.
+The whole process required two system restarts.
+Before the first restart the user was asked whether to enable EMS Memory,
+since use of expanded memory required a reserved 64KiB region in upper memory.
+The first restart inserted the SIZER.EXE program which gauged the memory needed by each TSR or Driver.
+MemMaker would then calculate the optimal Driver and TSR placement in upper memory and modify the AUTOEXEC.BAT and CONFIG.SYS accordingly,
+and reboot the second time.
+
+MEMMAKER.EXE and SIZER.EXE were developed for Microsoft by Helix Software Company and were eliminated starting in MS DOS 7 (Windows 95);
+however, they could be obtained from Microsoft's FTP server as part of the OLDDOS.EXE package, alongside other tools.
+
+PC DOS uses another program called RamBoost to optimize memory, working either with PC DOS's HIMEM/EMM386
+or a third-party memory manager. RamBoost was licensed to IBM by Central Point Software.
+
+MIRROR
+This section needs expansion. You can help by adding to it. (May 2019)
+The MIRROR command saves disk storage information that can be used to recover accidentally erased files.
+
+The command is available in MS-DOS version 5. It is available separately for versions 6.2 and later on Supplemental Disk.
+
+MODE
+Configures system devices. Changes graphics modes, adjusts keyboard settings, prepares code pages, and sets up port redirection.
+
+The command is available in MS-DOS versions 3.2 and later and IBM PC DOS releases 1 and later.
+
+MORE
+Main article: more (command)
+The MORE command paginates text, so that one can view files containing more than one screen of text. More may also be used as a filter.
+While viewing MORE text, the return key displays the next line, the space bar displays the next page.
+
+The command is available in MS-DOS versions 2 and later.
+
+MOVE
+Main article: move (command)
+Moves files or renames directories.
+
+The command is available in MS-DOS versions 6 and later.
+
+DR-DOS used a separate command for renaming directories, rendir.
+
+MSAV
+Main article: MSAV
+A command that scans the computer for known viruses.
+
+The command is available in MS-DOS versions 6 and later.
+
+MSBACKUP
+The MSBACKUP command is used to backup or restore one or more files from one disk to another.
+
+The New York Times said that MSBACKUP "is much better and faster than the old BACKUP command used in earlier versions of DOS,
+but it does lack some of the advanced features found in backup software packages that are sold separately.
+There is another offering, named MWBACKUP, that is GUI-oriented. It was introduced for Windows for Workgroups (3.11).
+
+The MSBACKUP command is available in MS-DOS versions 6 and later.
+
+MSCDEX
+Main article: MSCDEX
+MSCDEX is a driver executable which allows DOS programs to recognize, read, and control CD-ROMs.
+
+The command is available in MS-DOS versions 6 and later.
+
+MSD
+Main article: Microsoft Diagnostics
+The MSD command provides detailed technical information about the computer's hardware and software.
+MSD was new in MS-DOS 6;[1][15] the PC DOS version of this command is QCONFIG.
+The command appeared first in Word2, and then in Windows 3.10.
+
+MSHERC
+This section needs expansion. You can help by adding to it. (May 2019)
+NLSFUNC
+This section needs expansion. You can help by adding to it. (May 2019)
+The command is available in MS-DOS versions 3.3 and later.
+
+PATH
+Displays or sets a search path for executable files.
+
+The command is available in MS-DOS versions 2 and later.
+
+PAUSE
+Suspends processing of a batch program and displays the message 'Press any key to continue. . .', if not given other text to display.
+
+The command is available in MS-DOS versions 1 and later.
+
+PING
+Main article: ping (networking utility)
+Allows the user to test the availability of a network connection to a specified host. Hostnames are usually resolved to IP addresses.
+
+It is not included in many DOS versions; typically ones with network stacks will have it as a diagnostic tool.
+
+Example:
+C:\> ping facebook.com
+Pinging facebook.com [31.13.76.68] with 32 bytes of data:
+Reply from 31.13.76.68: bytes=32 time=34ms TTL=89
+Reply from 31.13.76.68: bytes=32 time=37ms TTL=89
+Reply from 31.13.76.68: bytes=32 time=36ms TTL=89
+Reply from 31.13.76.68: bytes=32 time=36ms TTL=89
+   
+Ping statistics for 31.13.76.68:
+     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+     Minimum = 34ms, Maximum = 37ms, Average = 35ms
+	 
+POWER
+This section needs expansion. You can help by adding to it. (May 2019)
+The POWER command is used to turn power management on and off, report the status of power management,
+and set levels of power conservation. It is an external command implemented as POWER.EXE.
+
+The command is available in MS-DOS versions 6 and later.
+
+PRINT
+Main article: PRINT (command)
+The PRINT command adds or removes files in the print queue.
+This command was introduced in MS-DOS version 2.
+Before that there was no built-in support for background printing files.
+The user would usually use the copy command to copy files to LPT1.
+
+PRINTFIX
+This section needs expansion. You can help by adding to it. (May 2019)
+PROMPT
+The PROMPT command allows the user to change the prompt in the command screen. The default prompt is $p (i.e. prompt $p), which displays the drive and current path as the prompt, but can be changed to anything.
+'Prompt $d', displays the current system date as the prompt.
+Type 'prompt /?' in the cmd screen for help on this function.
+
+The command is available in MS-DOS versions 2 and later and IBM PC DOS releases 2.1 and later.
+
+QBASIC
+Main article: QBasic
+An integrated development environment and BASIC interpreter.
+
+The command is available in MS-DOS versions 5 and later.
+
+RD or RMDIR
+Main article: rmdir
+Remove a directory (delete a directory); by default the directories must be empty of files for the command to succeed.
+
+The command is available in MS-DOS versions 2 and later.
+
+The deltree command in some versions of MS-DOS and all versions of Windows 9x removes non-empty directories.
+
+RECOVER
+Main article: recover (command)
+A primitive filesystem error recovery utility included in MS-DOS / IBM PC DOS.
+
+The command is available in MS-DOS versions 2 through 5.
+
+REM
+Remark (comment) command, normally used within a batch file, and for DR-DOS, PC/MS-DOS 6 and above, in CONFIG.SYS.
+This command is processed by the command processor.
+Thus, its output can be redirected to create a zero-byte file.
+REM is useful in logged sessions or screen-captures. One might add comments by way of labels, usually starting with double-colon (::).
+These are not processed by the command processor.
+
+REN
+Main article: ren (command)
+The REN command renames a file.
+Unlike the move command, this command cannot be used to rename subdirectories, or rename files across drives.
+Mass renames can be accomplished by the use of the wildcards characters asterisk (*) and question mark (?).
+
+The command is available in MS-DOS versions 1 and later.
+
+REPLACE
+Main article: replace (command)
+A command that is used to replace one or more existing computer files or add new files to a target directory.
+
+The command is available in MS-DOS versions 3.2 and later.
+
+RESTORE
+See: BACKUP and RESTORE
+
+SCANDISK
+Main article: Microsoft ScanDisk
+Disk diagnostic utility. Scandisk was a replacement for the chkdsk utility, starting with MS-DOS version 6.2 and later.
+Its primary advantages over chkdsk is that it is more reliable and has the ability to run a surface scan which finds and marks bad clusters on the disk.
+It also provided mouse point-and-click TUI, allowing for interactive session to complement command-line batch run.
+chkdsk had surface scan and bad cluster detection functionality included, and was used again on Windows NT based operating systems.
+
+SELECT
+This section needs expansion. You can help by adding to it. (July 2019)
+The SELECT command formats a disk and installs country-specific information and keyboard codes.
+
+The command is available in MS-DOS versions 3.3 and 4 and IBM PC DOS releases 3 through 3.3.
+
+This command is no longer included in DOS Version 6 and later.
+
+SET
+Sets environment variables.
+
+The command is available in MS-DOS versions 2 and later.
+
+cmd.exe in Windows NT 2000, 4DOS, 4OS2, 4NT, and a number of third-party solutions allow direct entry of environment variables from the command prompt.
+From at least Windows 2000, the set command allows for the evaluation of strings into variables, thus providing inter alia a means of performing integer arithmetic.
+
+SETUP
+This section needs expansion. You can help by adding to it. (July 2019)
+The command is available in MS-DOS versions 5 and later.
+
+SETVER
+See also: ver (command)
+SetVer is a TSR program designed to return a different value to the version of DOS that is running.
+This allows programs that look for a specific version of DOS to run under a different DOS.
+
+The command is available in MS-DOS versions 5 and later.
+
+SHARE
+Main article: share (command)
+Installs support for file sharing and locking capabilities.
+
+The command is available in MS-DOS versions 3 and later.
+
+SHIFT
+The SHIFT command increases number of replaceable parameters to more than the standard ten for use in batch files.
+This is done by changing the position of replaceable parameters.
+It replaces each of the replacement parameters with the subsequent one (e.g. %0 with %1, %1 with %2, etc.).
+
+The command is available in MS-DOS versions 2 and later.
+
+SIZER
+This section needs expansion. You can help by adding to it. (May 2019)
+SMARTDRV
+Main article: SmartDrive
+The command is available in MS-DOS versions 6 and later.
+
+SORT
+A filter to sort lines in the input data stream and send them to the output data stream. Similar to the Unix command sort.
+Handles files up to 64k. This sort is always case insensitive.
+
+The command is available in MS-DOS versions 2 and later.
+
+SUBST
+Main article: SUBST
+A utility to map a subdirectory to a drive letter.
+The opposite can be achieved via the JOIN command.
+
+The command is available in MS-DOS versions 3.1 and later.
+
+SYS
+Main article: SYS (command)
+A utility to make a volume bootable.
+Sys rewrites the Volume Boot Code (the first sector of the partition that SYS is acting on) so that the code, when executed, will look for IO.SYS.
+SYS also copies the core DOS system files, IO.SYS, MSDOS.SYS, and COMMAND.COM, to the volume.
+SYS does not rewrite the Master Boot Record, contrary to widely held belief.
+
+The command is available in MS-DOS versions 1 and later.
+
+TELNET
+The Telnet Client is a tool for developers and administrators to help manage and test network connectivity.
+
+TIME
+Main article: TIME (command)
+Display the system time and waits for the user to enter a new time. Complements the DATE command.
+
+The command is available in MS-DOS versions 1 and later.
+
+TITLE
+Main article: title (command)
+Enables a user to change the title of their MS-DOS window.
+
+TREE
+Main article: tree (command)
+It is an external command, graphically displays the path of each directory and sub-directories on the specified drive.
+
+The command is available in MS-DOS versions 3.2 and later and IBM PC DOS releases 2 and later.
+
+TRUENAME
+The TRUENAME command will expand the name of a file, directory, or drive, and display the result.
+It will expand an abbreviated form which the command processor can recognise into its full form.
+It can see through SUBST and JOIN to find the actual directory.
+
+MS-DOS can find files and directories given their names, without full path information, if the search object is on a path specified by the environment variable PATH.
+For example, if PATH includes C:\PROGRAMS, and file MYPROG.EXE is on this directory, then if MYPROG is typed at the command prompt, the command processor will execute C:\PROGRAMS\MYPROG.EXE. In this case,
+
+TRUENAME MYPROG
+would display
+
+C:\PROGRAMS\MYPROG.EXE
+This command displays the UNC pathnames of mapped network or local CD drives.
+This command is an undocumented DOS command.
+The help switch "/?" defines it as a "Reserved command name".
+It is available in MS-DOS 5.00.0.
+This command is similar to the which command, which, given an executable found in $PATH, would give a full path and name.
+The C library function realpath performs this function.
+The Microsoft Windows command processors do not support this command. <real code.st>
+
+TYPE
+Main article: TYPE (DOS command)
+Displays a file.
+The more command is frequently used in conjunction with this command, e.g. type long-text-file | more.
+TYPE can be used to concatenate files (type file1 file2 > file3);
+however this won't work for large files[dubious – discuss][citation needed]—use copy command instead.
+
+The command is available in MS-DOS versions 1 and later.
+
+UNDELETE
+Main article: Undeletion
+Restores file previously deleted with del.
+By default all recoverable files in the working directory are restored; options are used to change this behavior.
+If the MS-DOS mirror TSR program is used, then deletion tracking files are created and can be used by undelete.
+
+The command is available in MS-DOS versions 5 and later.
+
+UNFORMAT
+This section needs expansion. You can help by adding to it. (May 2019)
+The UNFORMAT command is used to undo the effects of formatting a disk.
+
+The command is available in MS-DOS versions 5 and later.
+
+VER
+Main article: ver (command)
+An internal DOS command, that reports the DOS version presently running, and since MS-DOS 5, whether DOS is loaded high.
+
+The command is available in MS-DOS versions 2 and later.
+
+VERIFY
+Enables or disables the feature to determine if files have been correctly written to disk.
+If no parameter is provided, the command will display the current setting.
+
+The command is available in MS-DOS versions 2 and later.
+
+VOL
+Main article: vol (command)
+An internal command that displays the disk volume label and serial number.
+
+The command is available in MS-DOS versions 2 and later.
+
+VSAFE
+Main article: MSAV
+A TSR program that continuously monitors the computer for viruses.
+
+The command is available in MS-DOS versions 6 and later.
+
+XCOPY
+Main article: XCOPY
+Copy entire directory trees.
+Xcopy is a version of the copy command that can move files and directories from one location to another.
+
+XCOPY usage and attributes can be obtained by typing "XCOPY /?" in the DOS Command line.
+
+The command is available in MS-DOS versions 3.2 and later.

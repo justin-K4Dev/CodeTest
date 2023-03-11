@@ -1,0 +1,36 @@
+ K 드라이브의 볼륨: Work
+ 볼륨 일련 번호: 6099-9B74
+
+ K:\my-project\TestCode\TestDOSBatch\Batch 디렉터리
+
+2019-11-05  오후 11:50    <DIR>          .
+2019-11-05  오후 11:50    <DIR>          ..
+2019-11-05  오후 11:55                 0 )
+2019-10-30  오후 11:19               176 batch_run_close.bat
+2019-11-02  오후 03:51             3,205 batch_template.bat
+2019-10-30  오후 11:50             1,259 batch_template_usage.txt
+2019-11-01  오전 09:56               656 cd_drive_change.bat
+2019-11-05  오전 12:13               618 color_change.bat
+2019-10-30  오후 11:48             1,643 compare.bat
+2019-11-04  오후 11:56             1,984 condition.bat
+2019-11-02  오후 03:55               532 description.bat
+2019-10-30  오후 11:48               517 environment.bat
+2019-11-05  오전 12:50             1,012 error_level.bat
+2019-11-06  오전 12:19             7,305 etc.bat
+2019-11-03  오전 02:38               824 file_directory_exist_check.bat
+2019-11-03  오전 02:14            10,066 for_loop.bat
+2019-10-30  오후 09:00                11 hello.txt
+2019-10-30  오후 09:00                11 hi.txt
+2019-10-30  오후 11:48               463 input_choise.bat
+2019-11-02  오후 03:52               295 multi_line_string.bat
+2019-11-06  오전 12:02               137 null
+2019-11-06  오전 12:24                 0 out.txt
+2019-10-31  오전 12:08               451 parameter_pass.bat
+2019-10-30  오후 11:19               140 program_start_exit.bat
+2019-11-03  오전 01:49    <DIR>          source
+2019-10-30  오후 11:49               966 string_print.bat
+2019-10-30  오전 01:44    <DIR>          target
+2019-11-06  오전 12:24               177 test.bat
+2019-11-05  오전 09:33               502 windows_service.bat
+              25개 파일              32,950 바이트
+               4개 디렉터리  739,812,929,536 바이트 남음

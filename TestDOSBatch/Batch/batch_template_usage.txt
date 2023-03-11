@@ -1,0 +1,46 @@
+
+:: Batch Template 사용 예제
+
+>batch_template.bat /?
+test v1.23
+This is a sample batch file template,
+providing command-line arguments and flags.
+
+USAGE:
+test.bat [flags] "required argument" "optional argument"
+
+/?, --help           shows this help
+/v, --version        shows the version
+/e, --verbose        shows detailed output
+-f, --flag value     specifies a named parameter value
+
+>batch_template.bat          <- throws missing argument error
+(same as /?, plus..)
+****                                   ****
+****    MISSING "REQUIRED ARGUMENT"    ****
+****                                   ****
+
+>batch_template.bat -v
+1.23
+
+>batch_template.bat --version
+test v1.23
+This is a sample batch file batch_template,
+providing command-line arguments and flags.
+
+>batch_template.bat -e arg1
+**** DEBUG IS ON
+UnNamedArgument:    "arg1"
+UnNamedOptionalArg: not provided
+NamedFlag:          not provided
+
+>batch_template.bat --flag "my flag" arg1 arg2
+UnNamedArgument:    "arg1"
+UnNamedOptionalArg: "arg2"
+NamedFlag:          "my flag"
+
+>batch_template.bat --verbose "argument #1" --flag "my flag" second
+**** DEBUG IS ON
+UnNamedArgument:    "argument #1"
+UnNamedOptionalArg: "second"
+NamedFlag:          "my flag"
