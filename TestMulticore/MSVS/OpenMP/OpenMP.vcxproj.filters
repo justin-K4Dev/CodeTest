@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{410c1f33-3420-4613-a66e-b4818fd3102c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP">
+      <UniqueIdentifier>{eaf15ef1-340e-46cc-b38b-48bf78ddc199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP\Directives">
+      <UniqueIdentifier>{f7906eb4-d92a-4630-9aa3-15db19fb5299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP\Directives\Parallel">
+      <UniqueIdentifier>{f01e8606-c168-4f1a-934b-e8e21eeb590c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP\Directives\Sync">
+      <UniqueIdentifier>{a49a4a7b-daca-4a03-8d9a-449a66c372b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP\Directives\TaskDivision">
+      <UniqueIdentifier>{bb15cef0-def5-410f-8c2c-c3fa6480a3a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP\Directives\Clause">
+      <UniqueIdentifier>{60283fd0-51ba-4280-a591-77507bc88347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP\Directives\DataAttrib">
+      <UniqueIdentifier>{7556d6cd-c526-41ad-bbb5-99b29a21e842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenMP\Runtime Library Routines">
+      <UniqueIdentifier>{93e38c03-8022-460d-a686-b60ba05e6242}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFunction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Collapse.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyIn.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyPrivate.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="Default.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstPrivate.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="If.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="LastPrivate.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="NoWait.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="Private.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="Reduction.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="Schedule.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="Shared.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="Untied.cpp">
+      <Filter>OpenMP\Directives\Clause</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPrivate.cpp">
+      <Filter>OpenMP\Directives\DataAttrib</Filter>
+    </ClCompile>
+    <ClCompile Include="Parallel.cpp">
+      <Filter>OpenMP\Directives\Parallel</Filter>
+    </ClCompile>
+    <ClCompile Include="Atomic.cpp">
+      <Filter>OpenMP\Directives\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Barrier.cpp">
+      <Filter>OpenMP\Directives\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Critical.cpp">
+      <Filter>OpenMP\Directives\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Flush.cpp">
+      <Filter>OpenMP\Directives\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Master.cpp">
+      <Filter>OpenMP\Directives\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Ordered.cpp">
+      <Filter>OpenMP\Directives\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskWait.cpp">
+      <Filter>OpenMP\Directives\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="For.cpp">
+      <Filter>OpenMP\Directives\TaskDivision</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections.cpp">
+      <Filter>OpenMP\Directives\TaskDivision</Filter>
+    </ClCompile>
+    <ClCompile Include="Single.cpp">
+      <Filter>OpenMP\Directives\TaskDivision</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>OpenMP\Directives\TaskDivision</Filter>
+    </ClCompile>
+    <ClCompile Include="Directive.cpp">
+      <Filter>OpenMP\Directives</Filter>
+    </ClCompile>
+    <ClCompile Include="RLR_Function.cpp">
+      <Filter>OpenMP\Runtime Library Routines</Filter>
+    </ClCompile>
+    <ClCompile Include="Concept.cpp">
+      <Filter>OpenMP</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryScope.cpp">
+      <Filter>OpenMP</Filter>
+    </ClCompile>
+    <ClCompile Include="TestOpenMP.cpp" />
+  </ItemGroup>
+</Project>

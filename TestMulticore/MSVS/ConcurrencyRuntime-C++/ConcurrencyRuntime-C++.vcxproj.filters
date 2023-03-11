@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{410c1f33-3420-4613-a66e-b4818fd3102c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Concurrency Runtime">
+      <UniqueIdentifier>{72426691-01a4-49a4-90fe-5e999de3bd6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Concurrency Runtime\PPL">
+      <UniqueIdentifier>{227f4bb7-9d9f-4db4-bde0-6d1e5f7857a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Concurrency Runtime\PPL\Algorithm">
+      <UniqueIdentifier>{e397d808-e326-4a0a-bddd-cbbfcb645510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Concurrency Runtime\PPL\Container">
+      <UniqueIdentifier>{9afb3f36-3591-4e62-bc8b-8176f4985910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Concurrency Runtime\AAL">
+      <UniqueIdentifier>{f0632c77-8374-4756-ad54-b5954e8c7141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Concurrency Runtime\PPL\Sync">
+      <UniqueIdentifier>{6f0c47d9-0542-4203-923d-68c940b281ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Concurrency Runtime\PPL\Task">
+      <UniqueIdentifier>{f207f1c8-3dba-4b89-b987-c3b53166f930}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFunction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AAL_AgentBasedApplication.cpp">
+      <Filter>Concurrency Runtime\AAL</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_ParallelFor.cpp">
+      <Filter>Concurrency Runtime\PPL\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_ParallelForEach.cpp">
+      <Filter>Concurrency Runtime\PPL\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_ParallelInvoke.cpp">
+      <Filter>Concurrency Runtime\PPL\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_ConcurrentQueue.cpp">
+      <Filter>Concurrency Runtime\PPL\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_ConcurrentVector.cpp">
+      <Filter>Concurrency Runtime\PPL\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="TestConRT.cpp" />
+    <ClCompile Include="PPL_ConcurrentUnorderedMap.cpp">
+      <Filter>Concurrency Runtime\PPL\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_Combinable.cpp">
+      <Filter>Concurrency Runtime\PPL\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_CriticalSection.cpp">
+      <Filter>Concurrency Runtime\PPL\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_ReaderWriterLock.cpp">
+      <Filter>Concurrency Runtime\PPL\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_TaskGroup.cpp">
+      <Filter>Concurrency Runtime\PPL\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_TaskScheduler.cpp">
+      <Filter>Concurrency Runtime\PPL\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="PPL_ConcurrentUnorderedSet.cpp">
+      <Filter>Concurrency Runtime\PPL\Container</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

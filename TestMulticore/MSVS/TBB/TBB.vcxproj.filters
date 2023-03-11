@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{410c1f33-3420-4613-a66e-b4818fd3102c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TBB">
+      <UniqueIdentifier>{18b2414c-b489-4d22-94d1-6c9dbdb68ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TBB\Algorithm">
+      <UniqueIdentifier>{885045ee-e83b-484c-a180-4ca08ffcc504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TBB\Memory">
+      <UniqueIdentifier>{d5ccbb34-8de3-44a8-b994-516468b26ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TBB\Task">
+      <UniqueIdentifier>{90255fd0-9f88-4697-9e26-be256dbdeeb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TBB\Container">
+      <UniqueIdentifier>{8a986311-f376-472b-bb0c-48c2bcc0391a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TBB\Sync">
+      <UniqueIdentifier>{e9ebc844-d468-4315-87ca-945d8e40a68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TBB\Init">
+      <UniqueIdentifier>{3d15fdd4-abbc-4f83-bf00-9f41c5946a3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFunction.h" />
+    <ClInclude Include="MemoryAllocator.h">
+      <Filter>TBB\Memory</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTBB.cpp" />
+    <ClCompile Include="OverlappedParallel.cpp">
+      <Filter>TBB\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelFor.cpp">
+      <Filter>TBB\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelForEach.cpp">
+      <Filter>TBB\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelInvoke.cpp">
+      <Filter>TBB\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelReduce.cpp">
+      <Filter>TBB\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelSort.cpp">
+      <Filter>TBB\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelWhile.cpp">
+      <Filter>TBB\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcurrentHashMap.cpp">
+      <Filter>TBB\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcurrentPriorityQueue.cpp">
+      <Filter>TBB\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcurrentQueue.cpp">
+      <Filter>TBB\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcurrentUnorderedMap.cpp">
+      <Filter>TBB\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcurrentVector.cpp">
+      <Filter>TBB\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.cpp">
+      <Filter>TBB\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryAllocator.cpp">
+      <Filter>TBB\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Atomic.cpp">
+      <Filter>TBB\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Combinable.cpp">
+      <Filter>TBB\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutex.cpp">
+      <Filter>TBB\Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler.cpp">
+      <Filter>TBB\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskGroup.cpp">
+      <Filter>TBB\Task</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
