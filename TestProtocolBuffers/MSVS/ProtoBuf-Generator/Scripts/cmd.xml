@@ -1,0 +1,6 @@
+<?ml version="1.0" encoding="utf-8"?>
+<ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace;assembly=mscorlib">
+  <ItemType Name="CmdItem" DisplayName="Command Batch File" />
+  <ContentType Name="CmdContent" ItemType="CmdItem" DisplayName="Cmd Batch Content" />
+  <FileExtension Name="*.cmd" ContentType="CmdItem" />
+</ProjectSchemaDefinitions>

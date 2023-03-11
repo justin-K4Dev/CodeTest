@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+  	<PropertyPageSchema Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml" />
+  	<AvailableItemName Include="CmdItem">
+  	  <Targets>CmdRun</Targets>
+  	</AvailableItemName>
+  </ItemGroup>
+
+  <Target Name="CmdRun" BeforeTargets="ClCompile" Inputs="%(CmdItem.Identity)" Outputs="%(CmdItem.RelativeDir)%(CmdItem.FileName).log">
+  	<Message Text="Run Dos Cmd: %(CmdItem.FileName)%(CmdItem.Extension)" />
+  	<Exec Command="%(CmdItem.RelativeDir) %(CmdItem.Identity)" />
+  </Target>
+</Project>

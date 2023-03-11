@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{2fb33c16-b99b-4f5d-8402-280c611410f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CmdItem Include="gen_type_all.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\cmd.targets">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Scripts\cmd.xml">
+      <Filter>Scripts</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+﻿{
+	"protocol": {
+		"command": "ClientToLogin.Request.LoginReq"
+	}
+}

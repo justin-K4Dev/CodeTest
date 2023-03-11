@@ -1,0 +1,23 @@
+{
+	"auto_update_files" : [
+		{
+			"project_path" : "../ProtoBuf-Net-Unity/",
+			"project_file" : "ProtoBuf-Net-Unity.csproj",
+			"delete_item_group_in_project" : [
+				{
+					"group_name" : "Compile",
+					"sub_folder" : "Message"
+				}
+			],
+			
+			"add_item_group_in_project" : [
+				{
+					"group_name" : "Compile",
+					"sub_folder" : "Message",
+					"item_attrib" : "*.cs",
+					"is_add_filter" : "false"							
+				},
+			]			
+		}
+	]
+}

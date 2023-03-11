@@ -1,0 +1,64 @@
+{
+	"auto_update_files" : [
+		{
+			"project_path" : "../ProtoBuf-CPP/",
+			"project_file" : "ProtoBuf-CPP.vcxproj.filters",
+			"delete_item_group_in_project" : [
+				{
+					"group_name" : "ClCompile",
+					"sub_folder" : "Message"
+				},
+				{
+					"group_name" : "ClInclude",
+					"sub_folder" : "Message"
+				}
+			],
+		
+			"add_item_group_in_project" : [
+				{
+					"group_name" : "ClCompile",
+					"sub_folder" : "Message",
+					"item_attrib" : "*.cc",
+					"is_add_filter" : "true"				
+				},
+				{
+					"group_name" : "ClInclude",
+					"sub_folder" : "Message",
+					"item_attrib" : "*.h",
+					"is_add_filter" : "true"
+				}
+			],
+		},
+
+		{			
+			"project_path" : "../ProtoBuf-CPP/",
+			"project_file" : "ProtoBuf-CPP.vcxproj",
+			"delete_item_group_in_project" : [
+				{
+					"group_name" : "ClCompile",
+					"sub_folder" : "Message"
+				},
+				{
+					"group_name" : "ClInclude",
+					"sub_folder" : "Message"					
+				}
+			],
+			
+			"add_item_group_in_project" : [
+				{
+					"group_name" : "ClCompile",
+					"sub_folder" : "Message",
+					"item_attrib" : "*.cc",
+					"is_add_filter" : "false"
+				},
+				{
+					"group_name" : "ClInclude",
+					"sub_folder" : "Message",
+					"item_attrib" : "*.h",
+					"is_add_filter" : "false"				
+				}
+			],
+		}		
+	]	
+	
+}

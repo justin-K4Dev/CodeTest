@@ -1,0 +1,36 @@
+﻿  ===== Generate code for each language by ProtocolBuffers ======
+protocol.Packet.proto(3,1): warning G4DFB9791: Import google/protobuf/timestamp.proto is unused.
+protocol.Packet.proto(3,1): warning G4DFB9791: Import google/protobuf/timestamp.proto is unused.
+protocol.Packet.proto(3,1): warning G4DFB9791: Import google/protobuf/timestamp.proto is unused.
+  F:\work\Test\TestProtocolBuffers\ProtoBuf4Unity-Bin\2.3.5\include\*.proto을(를) 찾을 수 없습니다.
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-TypeDefines\protocol.CommandType.proto
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-TypeDefines\protocol.Packet.proto
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-TypeDefines\tutorial.hierarchy.proto
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-TypeDefines\tutorial.player.proto
+  4개 파일이 복사되었습니다.
+protocol.Packet.proto(3,8,3,39): warning : import not used: 'google/protobuf/timestamp.proto'
+  generated: F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\protocol.CommandType.cs
+  generated: F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\protocol.Packet.cs
+  generated: F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\tutorial.player.cs
+  generated: F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\tutorial.hierarchy.cs
+  ===== Copy To Targets =====
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\protocol.CommandType.pb.h
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\protocol.Packet.pb.h
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\tutorial.hierarchy.pb.h
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\tutorial.player.pb.h
+  4개 파일이 복사되었습니다.
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\protocol.CommandType.pb.cc
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\protocol.Packet.pb.cc
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\tutorial.hierarchy.pb.cc
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\cpp\tutorial.player.pb.cc
+  4개 파일이 복사되었습니다.
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp\ProtocolCommandType.cs
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp\ProtocolPacket.cs
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp\TutorialHierarchy.cs
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp\TutorialPlayer.cs
+  4개 파일이 복사되었습니다.
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\protocol.CommandType.cs
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\protocol.Packet.cs
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\tutorial.hierarchy.cs
+  F:\work\Test\TestProtocolBuffers\MSVS\ProtoBuf-Generator\..\..\ProtoBuf-Out\csharp4unity\tutorial.player.cs
+  4개 파일이 복사되었습니다.

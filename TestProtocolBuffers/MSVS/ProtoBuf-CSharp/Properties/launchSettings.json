@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ProtoBuf-CSharp": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{0e31ed8c-949a-40cc-841b-b89c3a4f9d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{dcbf66ca-e93a-495a-9d1c-7a83ed3cdc8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="Message\protocol.CommandType.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\protocol.Packet.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\tutorial.hierarchy.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\tutorial.player.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Stream.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketSerialize.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Message\protocol.CommandType.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\protocol.Packet.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\tutorial.hierarchy.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\tutorial.player.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>0.Common</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
