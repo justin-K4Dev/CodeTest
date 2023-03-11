@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_release_5.2.cpp">
+      <Filter>Release List\Lua-5.2 Release List</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_release_5_3.cpp">
+      <Filter>Release List\Lua-5.3 Release List</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaMeta.hpp">
+      <Filter>Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="lua_yeildk_in_c.lua">
+      <Filter>Release List\Lua-5.3 Release List</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{90b13cfd-9871-466d-9f1a-688ea99f0f2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Release List">
+      <UniqueIdentifier>{6d378063-3ba6-4f11-9e7d-1feba5f25266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Release List\Lua-5.2 Release List">
+      <UniqueIdentifier>{fd84d6a3-9b0c-4bc6-bfea-122b8a7bbd08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Release List\Lua-5.3 Release List">
+      <UniqueIdentifier>{92137662-e4b0-46d8-bbd7-e036237017e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{36a42e5c-5e48-4571-b07b-3bbcec9d16b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Incompatibilities with the Previous 5.1 Version.txt">
+      <Filter>Release List\Lua-5.2 Release List</Filter>
+    </Text>
+    <Text Include="Incompatibilities with the Previous 5.2 Version.txt">
+      <Filter>Release List\Lua-5.3 Release List</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
