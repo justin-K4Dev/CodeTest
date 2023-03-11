@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Protocol;
+	
+enum CommandType {
+	NONE = 0;
+	PLAYER_INFO_UPDATE = 3001;
+}

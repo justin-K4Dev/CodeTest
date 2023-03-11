@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+package tutorial;
+
+message Player {
+	uint64 id = 1;
+	string name = 2;
+	string email = 3;
+
+	enum PhoneType {
+		MOBILE = 0;
+		HOME = 1;
+		WORK = 2;
+	}
+
+	message PhoneNumber {
+		string number = 1;
+		PhoneType type = 2;
+	}
+
+	repeated PhoneNumber phones = 4;
+
+	message Item {
+		uint64 id = 1;
+		int32 itemTid = 2;
+	}
+
+	map<uint64, Item> items = 5;
+
+	message MobilePhone {
+		string device = 1;
+	}
+
+	message Watch {
+		string device = 1;
+	}
+
+	oneof msg {
+		MobilePhone mobilePhone = 6;
+		Watch watch = 7;
+	}
+
+	message Wallet {
+		repeated Item items = 1;
+	}
+
+	message Bag {
+		repeated Wallet wallets = 1;
+	}
+
+	repeated Bag bags = 8;
+
+
+	message Box {
+		map<uint64, Item> items = 1;
+	}
+
+	message MyTrunk {
+		map<uint64, Box> boxs = 1;
+	}
+
+	map<uint64, MyTrunk> myTrunks = 9;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package Protocol;
+
+
+message Item {
+	uint64 UUID = 1;
+	uint32 TID = 2;
+}
+
+message Character {
+	uint64 UUID = 1;
+	uint32 TID = 2;
+
+	repeated Item item = 3;
+}
+
+message Player {
+	uint64 UUID = 1;
+	bytes nickname = 2;
+
+	repeated Character character = 3;
+}

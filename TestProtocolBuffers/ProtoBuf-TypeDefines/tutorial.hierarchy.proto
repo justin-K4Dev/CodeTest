@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+
+message MyHomeObjectSlotInfo
+{
+	int32 slotNum = 1;
+	int32 objectId = 2;
+}
+
+
+message ClientToLoginReq
+{
+	message LoginReq {
+		string id = 1;
+		string password =2;
+		string securtyToken=3;
+	}
+
+	message LogoutReq {
+	}
+
+	oneof msg {
+		LoginReq loginReq = 1;
+		LogoutReq logoutReq = 2;
+	}
+}
+
+message ClientToLoginRes
+{
+	message LoginRes {
+		string gameServerAddr = 1;
+		int32 gameServerPort = 2;
+		string otp = 3;
+	}
+
+	message LogoutRes {
+	}
+
+	enum LoginServerErrorCode
+	{
+		Success = 0;
+		DupLogin =1;
+		Moving = 2;
+		DbError =3;
+		KickFail =4;
+		NotCorrectPassword = 5;
+		NotFoundUser =6;
+		NoGameServer = 7;
+		LoginPending = 8;
+	}
+
+	LoginServerErrorCode errorCode = 1;
+	oneof msg {
+		LoginRes loginRes = 2;
+		LogoutRes logoutRes = 3;
+	}
+}
+
+message ClientToLoginMessage
+{
+	message MyHome {
+		int32 id = 1;
+		repeated MyHomeObjectSlotInfo slotInfo = 2;
+	}
+
+	oneof msg {
+		MyHome myHome = 1;
+	}
+}
+
+message ClientToLogin
+{
+	oneof msg {
+		ClientToLoginReq request = 1;
+		ClientToLoginRes response = 2;
+		ClientToLoginMessage message = 3;
+	}
+}
