@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B1F2B5E-5BF2-46C2-A5C0-F9B18E49B853}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestC0x</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Lua-5.1-C</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\out\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\out\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\out\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\out\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>K:\Library\Lua\5.1-C\include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4101;4244;4267;4290</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <AdditionalLibraryDirectories>K:\Library\Lua\out</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lua-5.1-C_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>K:\Library\Lua\5.1-C\include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4101;4244;4267;4290</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <AdditionalLibraryDirectories>K:\Library\Lua\out</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lua-5.1-C_d64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>K:\Library\Lua\5.1-C\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4101;4244;4267;4290</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <AdditionalLibraryDirectories>K:\Library\Lua\out</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lua-5.1-C.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>K:\Library\Lua\5.1-C\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4101;4244;4267;4290</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <AdditionalLibraryDirectories>K:\Library\Lua\out</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lua-5.1-C_64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="access_c_variable_in_lua.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="access_lua_variable_in_c.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="call_c_function_in_lua.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="call_lua_function_in_c.lua" />
+    <None Include="code_define.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_list.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="custom_class.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="cpp_generator.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="cpp_meta.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_array.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_error.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_meta_method.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_meta_table.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_pseudo_index-env.lua" />
+    <None Include="lua_pseudo_index-reference.lua" />
+    <None Include="lua_pseudo_index-shared_upvalue.lua" />
+    <None Include="lua_pseudo_index-upvalue.lua" />
+    <None Include="lua_thread.lua" />
+    <None Include="lua_thread_end.lua" />
+    <None Include="lua_thread_start.lua" />
+    <None Include="lua_oop.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_table.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_gc.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_thread_proc.lua" />
+    <None Include="lua_traceback.lua" />
+    <None Include="lua_user_data.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="lua_meta_custom_object.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="lua_template.lua">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Account.hpp" />
+    <ClInclude Include="CustomClass.hpp" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="LuaAllocator.hpp" />
+    <ClInclude Include="LuaMeta.hpp" />
+    <ClInclude Include="GameObject.hpp" />
+    <ClInclude Include="MemoryComparator.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Lua.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="array_c_into_lua.cpp" />
+    <ClCompile Include="array_lua_into_c.cpp" />
+    <ClCompile Include="CustomClass.cpp" />
+    <ClCompile Include="function_c_into_lua.cpp" />
+    <ClCompile Include="function_lua_into_c.cpp" />
+    <ClCompile Include="LuaList.cpp" />
+    <ClCompile Include="LuaMetaCustomClass.cpp" />
+    <ClCompile Include="lua_code_load.cpp" />
+    <ClCompile Include="lua_error.cpp" />
+    <ClCompile Include="lua_light_user_data.cpp" />
+    <ClCompile Include="lua_memory_leak_check.cpp" />
+    <ClCompile Include="lua_meta_method.cpp" />
+    <ClCompile Include="lua_meta_table.cpp" />
+    <ClCompile Include="lua_oop.cpp" />
+    <ClCompile Include="lua_pseudo_index.cpp" />
+    <ClCompile Include="lua_state_alloc.cpp" />
+    <ClCompile Include="lua_gc.cpp" />
+    <ClCompile Include="lua_thread.cpp" />
+    <ClCompile Include="lua_template.cpp" />
+    <ClCompile Include="MemoryComparator.cpp" />
+    <ClCompile Include="table_c_into_lua.cpp" />
+    <ClCompile Include="table_lua_into_c.cpp" />
+    <ClCompile Include="Lua.cpp" />
+    <ClCompile Include="lua_user_data.cpp" />
+    <ClCompile Include="variable_c_into_lua.cpp" />
+    <ClCompile Include="variable_lua_into_c.cpp" />
+    <ClCompile Include="lua_state_vm.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="lua_api_glue.jpg" />
+    <Image Include="lua_state_vm-1.jpg" />
+    <Image Include="lua_state_vm-10.jpg" />
+    <Image Include="lua_state_vm-2.jpg" />
+    <Image Include="lua_state_vm-3.jpg" />
+    <Image Include="lua_state_vm-4.jpg" />
+    <Image Include="lua_state_vm-5.jpg" />
+    <Image Include="lua_state_vm-6.jpg" />
+    <Image Include="lua_state_vm-7.jpg" />
+    <Image Include="lua_state_vm-8.jpg" />
+    <Image Include="lua_state_vm-9.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

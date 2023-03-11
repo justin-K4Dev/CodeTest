@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{d4929387-a603-453c-8760-803fd7810096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{cb160342-39e1-4849-b777-f25f78af73a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaState-VM">
+      <UniqueIdentifier>{b151ae56-91fc-4e46-a402-09fc39c7505e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{8c4d4c2a-e858-4dd7-8798-a9f718b61a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{c630c9b4-263b-4658-97f0-e6f54e30da60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Example">
+      <UniqueIdentifier>{4e573956-01c9-4dc6-93c5-4f64b92bf693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\CustomMetaData">
+      <UniqueIdentifier>{dfc89d7d-d575-4e99-a269-79b27359b1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\Example">
+      <UniqueIdentifier>{89b6a3b7-d433-4b14-8ed2-6636b4504221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\CPPCodeGenerator">
+      <UniqueIdentifier>{a891dd15-c6b9-43fe-ac31-b2b462dd2940}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="call_c_function_in_lua.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="access_c_variable_in_lua.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="access_lua_variable_in_c.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_gc.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_table.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_array.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_error.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_user_data.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_meta_table.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_oop.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_meta_method.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_light_user_data.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_template.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_traceback.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="call_lua_function_in_c.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_meta_custom_object.lua">
+      <Filter>Lua\Example</Filter>
+    </None>
+    <None Include="lua_list.lua">
+      <Filter>Lua\Example</Filter>
+    </None>
+    <None Include="custom_class.lua">
+      <Filter>Lua\Example</Filter>
+    </None>
+    <None Include="cpp_generator.lua">
+      <Filter>Lua\CPPCodeGenerator</Filter>
+    </None>
+    <None Include="cpp_meta.lua">
+      <Filter>Lua\CPPCodeGenerator</Filter>
+    </None>
+    <None Include="code_define.lua">
+      <Filter>Lua\CPPCodeGenerator</Filter>
+    </None>
+    <None Include="lua_thread_proc.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_thread.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_thread_start.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_thread_end.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_pseudo_index-upvalue.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_pseudo_index-reference.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_pseudo_index-env.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="lua_pseudo_index-shared_upvalue.lua">
+      <Filter>Lua</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="Lua.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.hpp">
+      <Filter>Object\CustomMetaData</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaMeta.hpp">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.hpp">
+      <Filter>Object\CustomMetaData</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomClass.hpp">
+      <Filter>Object\CustomMetaData</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaAllocator.hpp">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryComparator.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="variable_c_into_lua.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="variable_lua_into_c.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="function_c_into_lua.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="function_lua_into_c.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_state_alloc.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="table_c_into_lua.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="table_lua_into_c.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_state_vm.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_code_load.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_gc.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="array_c_into_lua.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="array_lua_into_c.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryComparator.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_error.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_user_data.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_oop.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_meta_table.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_meta_method.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_light_user_data.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_template.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomClass.cpp">
+      <Filter>Logic\Example</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaList.cpp">
+      <Filter>Logic\Example</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaMetaCustomClass.cpp">
+      <Filter>Logic\Example</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_thread.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_pseudo_index.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_memory_leak_check.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="lua_state_vm-1.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-2.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-3.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-4.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-5.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-6.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-7.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-8.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-9.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_state_vm-10.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+    <Image Include="lua_api_glue.jpg">
+      <Filter>LuaState-VM</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
