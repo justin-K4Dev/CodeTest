@@ -1,0 +1,43 @@
+
+# Protobuf CPP Install & Configure
+
+	1. Install vcpkg
+
+		cd library path
+		mkdir vcpkg && cd vcpkg
+		git clone https://github.com/microsoft/vcpkg.git		
+
+
+	2. Install protobuf CPP
+	
+		vcpkg install protobuf protobuf:x64-windows
+		
+		./vcpkg/bootstrap-vcpkg.bat 실행 시키기
+
+		
+	3. vcpkg 설정 하기
+	
+		path 환경 변수에 vcpkg 설치 경로를 등록 하기
+
+		
+	4. vcpkg 설치 경로를 Visual Studio C++ 과 연결 시키기
+	
+		vcpkg integrate install
+
+			
+	5. Make Generator file
+		
+		- make package directory
+		- create xxx.proto file in package directory
+		- make cpp-generate-proto.bat
+		
+		ex)
+			set PROTO_BIN=..\..\ProtoBuf-Bin\x.x.x\bin\protoc.exe
+			set TYPE_DEFINES_PATH=..\..\ProtoBuf-TypeDefines\			
+			set CPP_OUT_PATH=..\..\ProtoBuf-Out\cpp\			
+			
+			%PROTO_BIN% --proto_path=%TYPE_DEFINES_PATH% --cpp_out=%CPP_OUT_PATH% ^
+			protocol.CommandType.proto ^
+			protocol.Packet.proto ^
+			tutorial.player.proto ^
+			tutorial.hierarchy.proto

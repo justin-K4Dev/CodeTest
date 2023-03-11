@@ -1,0 +1,33 @@
+
+# Protobuf Install & Configure
+
+	1. Install Protobuf & Build
+
+		Protobuf download - URL : https://github.com/google/protobuf
+		
+		or
+	
+		Go install MSI download - URL : https://golang.org/dl/
+		
+		해당 사이트를 참조 하여 빌드 과정을 진행 하고
+		
+		Runtime 파일을 참조 Library 들을 확인 한다.
+						
+	2. Run Runtime File for Test
+					
+	3. Make Generator file
+		
+		- make to define proto directory
+		- create xxx.proto file in defined proto directory
+		- make target_language-generate-proto.bat
+		
+		ex)
+			set PROTO_BIN=..\..\ProtoBuf-Bin\x.x.x\bin\protoc.exe
+			set TYPE_DEFINES_PATH=..\..\ProtoBuf-TypeDefines\			
+			set CSHARP_OUT_PATH=..\..\ProtoBuf-Out\csharp\
+
+			%PROTO_BIN% --proto_path=%TYPE_DEFINES_PATH% --csharp_opt=serializable --csharp_out=%CSHARP_OUT_PATH% ^
+			protocol.CommandType.proto ^
+			protocol.Packet.proto ^
+			tutorial.player.proto ^
+			tutorial.hierarchy.proto
