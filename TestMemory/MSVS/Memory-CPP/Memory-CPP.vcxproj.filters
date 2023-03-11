@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{d4929387-a603-453c-8760-803fd7810096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryManager">
+      <UniqueIdentifier>{cb160342-39e1-4849-b777-f25f78af73a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{af1786cf-6aa2-4257-b6f8-b4111d9ad9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pool">
+      <UniqueIdentifier>{a7d123ce-435d-4103-a536-8bbad80b39c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{fe7a6040-44a6-4c65-9c32-b9378462d229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryCounter">
+      <UniqueIdentifier>{035087d8-8810-49c4-ac06-9acd74ddd7a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Heap">
+      <UniqueIdentifier>{11737ca2-a263-4c1b-8d7b-e81ce6b7232c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="MemoryManager.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.hpp">
+      <Filter>Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="CRT_MemoryCheck.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.hpp">
+      <Filter>Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryComparator.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryCounter.h">
+      <Filter>MemoryCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STLMemoryCountingAllocator.h">
+      <Filter>MemoryCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectAllocator.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryAllocator.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryManager.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPoolTest.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicMemoryTest.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManagerTest.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryPoolTest.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryStatus.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryComparator.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCounterTest.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCounter.cpp">
+      <Filter>MemoryCounter</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Heap\Heap-MemoryAlloc.png">
+      <Filter>Logic\Heap</Filter>
+    </Image>
+    <Image Include="Heap\Heap-MemoryAlloc-Failure.png">
+      <Filter>Logic\Heap</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
