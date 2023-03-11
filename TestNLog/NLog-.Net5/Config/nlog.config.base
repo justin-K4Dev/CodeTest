@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <!-- This file will be included. -->
+  
+  <!--  Note: Attributes on the "nlog" element are ignored for this file, the ones of the main config will be used. -->
+
+  <!-- the variable ${productName} must be defined in the main nlog.config -->
+
+  <targets>
+    <target name="baseFile" xsi:type="File"
+            fileName="${basedir}/IncludeConfigLogs/${ProcessName}.log"
+            layout="${shortdate}|${time}|${level:uppercase=true}|${message}" />
+  </targets>
+  
+</nlog>

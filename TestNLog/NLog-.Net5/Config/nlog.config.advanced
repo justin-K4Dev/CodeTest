@@ -1,0 +1,145 @@
+﻿<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+			throwConfigExceptions="true"
+      autoReload="true"
+      internalLogLevel="Error"
+      internalLogToConsole="true">
+    
+  <extensions>
+    <add assembly="NLog.Windows.Forms" />
+    <add assembly="NLog.Slack" />
+  </extensions>
+  
+  
+  <!--async="true" : 모든 target 들을 비동기로 처리 설정-->
+  <targets async="true">
+
+    <!--VS 디버그창에 출력 설정-->
+    <target name="outToDebugger" xsi:type="Debugger"
+			      layout="${longdate}|${level:uppercase=true}|${threadid}|${message}|${event-properties:filePath}:${event-properties:lineNumber}" />
+
+    <!--폼의 리치 텍스트 박스 컨트롤에 출력 설정-->
+    <target name="outToRichTextBox" xsi:type="RichTextBox"
+            layout="${longdate}|${level:uppercase=true}|${threadid}|${message}" 
+            Width="1000"
+            Height="300"
+            useDefaultRowColoringRules="false" />
+    
+    <!--콘솔창에 출력: 로그레벨별 글자 컬러 설정-->
+    <target name="outToConsole" xsi:type="ColoredConsole"
+			      layout="${longdate}|${level:uppercase=true}|${threadid}|${message}|${event-properties:filePath}:${event-properties:lineNumber}">
+            <highlight-row condition="level == LogLevel.Debug" foregroundColor="DarkGray" />
+            <highlight-row condition="level == LogLevel.Info" foregroundColor="DarkGray" />
+            <highlight-row condition="level == LogLevel.Warn" foregroundColor="Yellow" />
+            <highlight-row condition="level == LogLevel.Error" foregroundColor="Red" />
+            <highlight-row condition="level == LogLevel.Fatal" foregroundColor="Red" />
+    </target>
+
+    <!--파일에 출력: 파일크기기준(archiveAboveSize), 매기준(archiveEvery), 프로그램시작시(archiveOldFileOnStartup) 로테이션-->
+    <target name="outToBasicFile" xsi:type="File"
+            layout="${longdate}|${stacktrace}|${message}"
+		        fileName="${basedir}/BasicLogs/${ProcessName}.log"
+		        archiveFileName="${basedir}/BasicLogs/${ProcessName}_{#}.custom.bak"
+		        archiveAboveSize="10240000"
+		        archiveNumbering="DateAndSequence"
+		        archiveEvery="Day"
+		        maxArchiveFiles= "1000"
+		        archiveOldFileOnStartup="true"
+		        ConcurrentWrites="true"
+		        archiveDateFormat="yyyyMMdd" />
+
+    <!--파일에 출력: LogEventInfo => (event-properties) 로그 정보 전달-->
+    <target name="outToLogEventInfoFile" xsi:type="File"
+            layout="${longdate}|${ticks}|${level:uppercase=true}|${threadid}|${message}|${event-properties:memberName}|${event-properties:filePath}:${event-properties:lineNumber}"
+		        fileName="${basedir}/LogEventInfoLogs/${ProcessName}.log"
+		        archiveFileName="${basedir}/LogEventInfoLogs/${ProcessName}_{#}.bak"
+		        archiveAboveSize="10240000"
+		        archiveNumbering="DateAndSequence"
+		        archiveEvery="Day"
+		        maxArchiveFiles= "1000"
+		        archiveOldFileOnStartup="true"
+		        ConcurrentWrites="true"
+		        archiveDateFormat="yyyyMMdd" />
+
+    <!--파일에 출력: filters & condition 체크-->
+    <target name="outToFilterLog" xsi:type="File"
+            layout="${longdate}|${ticks}|${level:uppercase=true}|${threadid}|${message}|${event-properties:memberName}|${event-properties:filePath}:${event-properties:lineNumber}"
+		        fileName="${basedir}/FilterLogs/${ProcessName}.log"
+		        archiveFileName="${basedir}/FilterLogs/${ProcessName}_{#}.bak"
+		        archiveAboveSize="10240000"
+		        archiveNumbering="DateAndSequence"
+		        archiveEvery="Day"
+		        maxArchiveFiles= "1000"
+		        archiveOldFileOnStartup="true"
+		        ConcurrentWrites="true"
+		        archiveDateFormat="yyyyMMdd" />
+
+    <!--메일에 출력-->
+    <target name="outToMail" xsi:type="Mail"
+		        layout="${longdate}|${ticks}|${level}|${threadid}|${message}|${event-properties:memberName}|${event-properties:filePath}:${event-properties:lineNumber}"          
+		        smtpServer="smtp.gmail.com"
+		        smtpPort="587"
+		        smtpAuthentication="Basic"
+		        smtpUserName="u4us72@gmail.com"
+		        smtpPassword="password"
+		        enableSsl="true"
+		        from="emailAddress@gmail.com"
+		        to="recipient@gmail.com"
+            cc=""
+            subject="Exception Now !!!" />
+
+    <!--Slack에 기본 출력-->
+    <target name="outToSlackBasic" xsi:type="Slack"
+		        layout="${longdate}|${ticks}|${level}|${threadid}|${exception:format=tostring}|${stacktrace}|${message}|${all-event-properties}"
+            webHookUrl="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
+            compact="true" />
+
+    <!--Slack에 필드 추가 출력-->
+    <target name="outToSlackCustomField" xsi:type="Slack"
+		        layout="${longdate}|${ticks}|${level}|${threadid}|${exception:format=tostring}|${stacktrace}|${message}|${all-event-properties}"
+            webHookUrl="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
+            compact="false" >
+            <field name="Machine Name" layout="${machinename}" />
+            <field name="Process Name" layout="${processname}" />
+            <field name="Process PID" layout="${processid}" />
+    </target>
+    
+  </targets>
+
+  <rules>
+
+    <!--모든 logger 가 출력 대상 이다 !!!-->
+    <logger name="*" minlevel="Debug" writeTo="outToConsole"/>
+
+    <!--특정 logger 가 출력 대상 이다 !!!-->
+    <!--minlevel ~ maxlevel : 포함 되는 레벨만 출력 대상 이다 !!!-->
+    <logger name="DebugLogger" minlevel="Debug" maxlevel="Error" writeTo="outToDebugger"/>
+    <logger name="WinUILogger" minlevel="Debug" writeTo="outToRichTextBox"/>
+
+    <!--level, levels : 설정된 레벨만 출력 대상 이다 !!!-->
+    <logger name="BasicLogger" level="Debug" writeTo="outToBasicFile"/>
+    <logger name="LogEventInfoLogger" levels="Debug, Error" writeTo="outToLogEventInfoFile"/>
+    
+    <!--When Filter 설정 가이드 : https://github.com/NLog/NLog/wiki/When-Filter#conditions-->
+    <logger name="FilterLogger" minlevel="Debug" writeTo="outToFilterLog">
+        <filters defaultAction="Log">
+            <!--하기의 조건들은 위->아래 방향으로 작성 순서에 따라 action 에 영향을 주는 것을 주의해야 한다 !!!, 서로 충돌되는 조건일 경우 먼저 적용된 조건이 우선 한다.-->
+            <when condition="exception != null" action="Ignore" /> <!--넘겨 받은 Exception 객체가 있는 경우-->
+            <when condition="contains('${event-properties:memberName}', 'justin')" action="Log" /> <!--event-properties 정보내 문자열이 있는 경우-->          
+            <when condition="'${event-properties:memberName}' == 'justin'" action="Ignore" /> <!--event-properties 정보를 비교하는 경우-->   
+            <when condition="length(message) > 100" action="Ignore" />
+            <when condition="'${OnHasProperties:1}' != ''" action="Ignore" /> <!--event-properties 정보를 가지고 있는 경우-->
+            <when condition="logger == 'MyApps.SomeClass'" action="Ignore" />
+            <when condition="(level >= LogLevel.Debug and contains(message, 'PleaseDontLogThis')) or level==LogLevel.Warn" action="Ignore" />
+            <when condition="not starts-with(message, 'PleaseLogThis')" action="Ignore" />
+            <when condition="contains(message, '&quot;Bob&quot;')" action="Ignore" />  <!--message 내에 "Bob" 이라는 문자열이 있는 경우-->
+        </filters>  
+    </logger>
+
+    <logger name="MailLogger" minlevel="Debug" writeTo="outToMail"/>
+    <logger name="SlackBasicLogger" minlevel="Debug" writeTo="outToSlackBasic"/>
+    <logger name="SlackCustomFieldLogger" minlevel="Debug" writeTo="outToSlackCustomField"/>
+
+  </rules>
+  
+</nlog>

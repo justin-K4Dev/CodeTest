@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      autoReload="true"
+      internalLogLevel="Off" >
+
+
+  <!-- override productName in includes, so it could be used in d:\nlog-file.config -->
+  <variable name="productName" value="myProduct"/>
+
+  <include file="${basedir}/Config/nlog.config.base" ignoreErrors="true" />
+
+  <!-- note: will be set after the include are loaded -->
+  <variable name="myVar" value="myValue"/>
+
+  <rules>
+    <logger name="*" minlevel="Info" writeTo="baseFile" enabled="false" />
+    <logger name="PerformanceLogger" minlevel="Trace"  writeTo="baseFile" enabled="true" />
+    <!-- not enabled, only when tracing -->
+
+  </rules>
+
+</nlog>
