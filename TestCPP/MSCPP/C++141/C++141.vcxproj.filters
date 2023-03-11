@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0.Common">
+      <UniqueIdentifier>{af6c620a-f59e-46fd-a913-774994827e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C++ conformance improvements in Visual Studio 2017">
+      <UniqueIdentifier>{c28f1c0a-7cc7-480e-8508-9d0bb3b3660b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="What%27s New for Visual C++ in Visual Studio 2017">
+      <UniqueIdentifier>{d8421623-9be0-4fca-9151-70290bcd49f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C++ conformance improvements in Visual Studio 2017\New Features">
+      <UniqueIdentifier>{d0929ca0-1419-4528-a071-341fa6f56935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C++ conformance improvements in Visual Studio 2017\Bug Fixes">
+      <UniqueIdentifier>{afd6984c-ca88-430f-a50b-cb8e62f1a128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C++ conformance improvements in Visual Studio 2017\Bug Fixes\Visual Studio 2017 Update Version 15.3">
+      <UniqueIdentifier>{ee536ba1-9755-4cbe-a7f7-4254ad940378}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>0.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CodeManagement.cpp">
+      <Filter>What%27s New for Visual C++ in Visual Studio 2017</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler.cpp">
+      <Filter>What%27s New for Visual C++ in Visual Studio 2017</Filter>
+    </ClCompile>
+    <ClCompile Include="C++ Library.cpp">
+      <Filter>What%27s New for Visual C++ in Visual Studio 2017</Filter>
+    </ClCompile>
+    <ClCompile Include="C++11.cpp">
+      <Filter>C++ conformance improvements in Visual Studio 2017\New Features</Filter>
+    </ClCompile>
+    <ClCompile Include="C++14.cpp">
+      <Filter>C++ conformance improvements in Visual Studio 2017\New Features</Filter>
+    </ClCompile>
+    <ClCompile Include="C++17.cpp">
+      <Filter>C++ conformance improvements in Visual Studio 2017\New Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Bug Fixes.cpp">
+      <Filter>C++ conformance improvements in Visual Studio 2017\Bug Fixes</Filter>
+    </ClCompile>
+    <ClCompile Include="Update v15.3.cpp">
+      <Filter>C++ conformance improvements in Visual Studio 2017\Bug Fixes\Visual Studio 2017 Update Version 15.3</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCode.cpp" />
+  </ItemGroup>
+</Project>
