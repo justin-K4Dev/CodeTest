@@ -1,0 +1,218 @@
+#-------------------------------------------------------------------------------
+19. Running Commands on a Remote Linux Server over SSH
+#-------------------------------------------------------------------------------
+
+# SSH meaning ?
+# Secure Shell (SSH) is a cryptographic network protocol for secure data communication,
+# remote command-line login, remote command execution, and other secure network services between two networked computers.
+# It connects, via a secure channel over an insecure network, a server and a client running SSH server and SSH client programs, respectively.
+# The protocol specification distinguishes between two major versions that are referred to as SSH-1 and SSH-2.
+
+#-------------------------------------------------------------------------------
+19.1 Running a Command on a Remote Linux Server
+#-------------------------------------------------------------------------------
+
+# Method
+- $ ssh [user]@[server] '[command]'
+
+# Get the uptime of the remote server
+$ ssh root@192.168.1.105 'uptime'
+
+# Reboot the remote server
+$ ssh root@192.168.1.105 'reboot'
+
+#-------------------------------------------------------------------------------
+19.2 Running Multiply Commands over SSH
+#-------------------------------------------------------------------------------
+
+# Method 1
+- ssh [user]@[server] '[command 1]; [command 2]; [command 3]'
+
+# Get Uptime and Disk Usage
+$ ssh root@192.168.1.105 'uptime; df -h'
+
+# Method 2
+- ssh [user]@[server] '[command 1] | [command 2] | [command 3]'
+
+# Get Memory Usage and Load Average
+$ ssh root@192.168.1.105 'free -m | cat /proc/loadavg'
+
+# Method 3
+- $ ssh [user]@[server] << EOF
+command 1
+command 2
+command 3
+EOF
+
+# Show Kernel Version, CPU(s) info and Total RAM seen by the system
+$ ssh root@192.168.1.105 << EOF
+uname -a
+grep "model name" /proc/cpuinfo
+grep MemTotal /proc/meminfo
+EOF
+
+
+#-------------------------------------------------------------------------------
+19.3 Executing a Local Script on a Remote Linux Server
+#-------------------------------------------------------------------------------
+
+# Method
+$ ssh [user]@[server] 'bash -s' < [local_script]
+
+# Execute the Local Script 'local_script.sh' on the Remote Machine
+$ ssh root@192.168.1.105 'bash -s' < local_script.sh
+
+$ which bash > local_script.sh
+$ vi local_script.sh
+
+#!/bin/bash
+echo 'Local Script call by SSH Remote !!!'
+
+:wq
+
+$ chmod +x local_script.sh
+
+
+#-------------------------------------------------------------------------------
+19.4 Bash Script SSH Automation Without a Password Prompt
+#-------------------------------------------------------------------------------
+
+# Save file on local system. ################################################### 
+$ which bash > /tmp/script.sh
+$ vi /tmp/script.sh
+
+#!/bin/bash
+echo 'Hello World call by SSH Remote !!!'
+
+:wq
+
+$ which bash > ssh_remote.sh
+$ vi ssh_remote.sh
+
+# Set up values. ###############################################################
+# User credentials for the remote server.
+USER=root
+PASS=kang14
+ 
+# The server hostname.
+SERVER=192.168.1.105
+ 
+# The script to run on the remote server.
+SCRIPT_PATH=/tmp/script.sh
+# Desired location of the script on the remote server.
+REMOTE_SCRIPT_PATH=/tmp/remote-script.sh
+ 
+# Create a temp script to echo the SSH password, used by SSH_ASKPASS
+SSH_ASKPASS_SCRIPT=/tmp/ssh-askpass-script
+cat > ${SSH_ASKPASS_SCRIPT} <<EOL
+#!/bin/bash
+echo "${PASS}"
+EOL
+chmod u+x ${SSH_ASKPASS_SCRIPT}
+ 
+# Set up other items needed for OpenSSH to work. ###############################
+# Set no display, necessary for ssh to play nice with setsid and SSH_ASKPASS.
+export DISPLAY=:0
+ 
+# Tell SSH to read in the output of the provided script as the password.
+# We still have to use setsid to eliminate access to a terminal and thus avoid
+# it ignoring this and asking for a password.
+export SSH_ASKPASS=${SSH_ASKPASS_SCRIPT}
+ 
+# LogLevel error is to suppress the hosts warning. The others are
+# necessary if working with development servers with self-signed 
+# certificates.
+SSH_OPTIONS="-oLogLevel=error"
+SSH_OPTIONS="${SSH_OPTIONS} -oStrictHostKeyChecking=no"
+SSH_OPTIONS="${SSH_OPTIONS} -oUserKnownHostsFile=/dev/null"
+ 
+
+# Run the script on the remote server. #########################################
+# Load in a base 64 encoded version of the script.
+B64_SCRIPT=`base64 --wrap=0 ${SCRIPT_PATH}`
+ 
+# The command that will run remotely. This unpacks the 
+# base64-encoded script, makes it executable, and then 
+# executes it as a background task.
+CMD="base64 -d - > ${REMOTE_SCRIPT_PATH} <<< ${B64_SCRIPT};"
+CMD="${CMD} chmod u+x ${REMOTE_SCRIPT_PATH};"
+CMD="${CMD} sh -c 'nohup ${REMOTE_SCRIPT_PATH} > /dev/null 2>&1 &'"
+ 
+# Log in to the remote server and run the above command.
+# The use of setsid is a part of the machinations to stop ssh 
+# prompting for a password.
+setsid ssh ${SSH_OPTIONS} ${USER}@${SERVER} "${CMD}"
+
+$ chmod +x ssh_remote.sh
+$ ./ssh_remote.sh
+
+
+#-------------------------------------------------------------------------------
+19.5 Executing a Application on a Remote Linux Server
+#-------------------------------------------------------------------------------
+
+$ which bash > remote_app.sh
+$ vi remote_app.sh
+
+#!/bin/bash
+
+################################################################################
+# 기본 정보 셋팅
+################################################################################
+USER=root
+PASSWORD=kang14
+SERVER=192.168.1.105
+MONGO_PATH="/service/mongodb"
+
+echo -e \\033[32m "############################################################" \\033[0m
+echo -e \\033[32m "UserID: $USER, PW: $PASSWORD" \\033[0m
+echo -e \\033[32m "Host: $SERVER" \\033[0m
+
+################################################################################
+# 상세 셋팅
+################################################################################
+# Create a temp script to echo the SSH password, used by SSH_ASKPASS
+SSH_ASKPASS_SCRIPT=/tmp/ssh-askpass-script
+cat > ${SSH_ASKPASS_SCRIPT} <<EOL
+#!/bin/bash
+echo "${PASSWORD}"
+EOL
+chmod u+x ${SSH_ASKPASS_SCRIPT}
+ 
+# Set up other items needed for OpenSSH to work. ###############################
+# Set no display, necessary for ssh to play nice with setsid and SSH_ASKPASS.
+export DISPLAY=:0
+ 
+# Tell SSH to read in the output of the provided script as the password.
+# We still have to use setsid to eliminate access to a terminal and thus avoid
+# it ignoring this and asking for a password.
+export SSH_ASKPASS=${SSH_ASKPASS_SCRIPT}
+ 
+# LogLevel error is to suppress the hosts warning. The others are
+# necessary if working with development servers with self-signed 
+# certificates.
+SSH_OPTIONS="-oLogLevel=error"
+SSH_OPTIONS="${SSH_OPTIONS} -oStrictHostKeyChecking=no"
+SSH_OPTIONS="${SSH_OPTIONS} -oUserKnownHostsFile=/dev/null"
+
+
+################################################################################
+# Stop
+################################################################################
+echo -e \\033[32m "## Stop mongo cluster processes..." \\033[0m
+CMD="service mongod stop"
+setsid ssh ${SSH_OPTIONS} ${USER}@${SERVER} "${CMD}"
+sleep 5
+
+################################################################################
+# Start
+################################################################################
+echo -e \\033[32m "## Start mongo cluster processes..." \\033[0m
+CMD="service mongod start"
+setsid ssh ${SSH_OPTIONS} ${USER}@${SERVER} "${CMD}"
+sleep 5
+
+
+
+$ chmod +x remote_app.sh
+$ ./remote_app.sh

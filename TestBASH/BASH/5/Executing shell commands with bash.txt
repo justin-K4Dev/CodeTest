@@ -1,0 +1,16 @@
+#-------------------------------------------------------------------------------
+5. Executing shell commands with bash
+#-------------------------------------------------------------------------------
+
+$ which bash > bash_backticks.sh
+$ vi bash_backticks.sh
+
+#!/bin/bash
+
+# use backticks " ` ` " to execute shell command
+echo `uname -o`
+# executing bash command without backticks
+echo uname -o 
+
+$ chmod +x bash_backticks.sh
+$ ./bash_backticks.sh

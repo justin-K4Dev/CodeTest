@@ -1,0 +1,15 @@
+#-------------------------------------------------------------------------------
+2. Simple Backup bash shell script
+#-------------------------------------------------------------------------------
+
+$ which bash > backup.sh
+$ vi backup.sh
+
+#!/bin/bash
+tar -czf ftp-user-bu.tar.gz /home/ftp-user
+
+$ chmod +x backup.sh
+$ ./backup.sh\
+$ tar: Removing leading '/' from member names
+$ ls ftp-user-bu.tar.gz
+$ ftp-user-bu.tar.gz

@@ -1,0 +1,60 @@
+#-------------------------------------------------------------------------------
+3. Variables
+#-------------------------------------------------------------------------------
+
+# In this example we declare simple bash variable
+# and print it on the screen ( stdout ) with echo command.
+
+$ which bash > hello_world.sh
+$ vi hello_world.sh
+
+#!/bin/bash
+# declare STRING variable
+STRING="Hello World !!!"
+#print variable on a screen
+echo $STRING
+
+$ chmod +x hello_world.sh 
+$ ./hello_world.sh
+
+# Your backup script and variables:
+
+$ which bash > backup.sh
+
+#!/bin/bash
+OF=ftp-user-bu_$(date +%Y%m%d).tar.gz
+tar -czf $OF /home/ftp-user
+
+$ chmod +x backup.sh 
+$ ./backup.sh
+
+#-------------------------------------------------------------------------------
+3.1. Global vs. Local variables
+#-------------------------------------------------------------------------------
+
+$ which bash > variables.sh
+$ vi variables.sh
+
+#!/bin/bash
+
+#Define bash global variable
+#This variable is global and can be used anywhere in this bash script
+VAR="global variable"
+
+function bash {
+	#Define bash local variable
+	#This variable is local to bash function only
+
+	local VAR="local variable"
+	echo $VAR
+}
+
+echo $VAR
+bash
+
+# Note the bash global variable did not change
+# "local" is bash reserved word
+echo $VAR
+
+$ chmod +x variables.sh 
+$ ./variables.sh

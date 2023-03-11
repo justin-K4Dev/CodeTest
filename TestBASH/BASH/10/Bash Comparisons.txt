@@ -1,0 +1,66 @@
+#-------------------------------------------------------------------------------
+10. Bash Comparisons
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+10.1. Arithmetic Comparisons
+#-------------------------------------------------------------------------------
+
+# keyword meaning
+  -lt : < 
+  -gt : > 
+  -le : <= 
+  -ge : >= 
+  -eq : == 
+  -ne : != 
+
+$ which bash > statement.sh
+$ vi statement.sh
+
+#!/bin/bash
+
+# declare integers
+NUM1=2
+NUM2=1
+if   [ $NUM1 -eq $NUM2 ]; then
+	echo "Both Values are equal"
+elif [ $NUM1 -gt $NUM2 ]; then
+	echo "NUM1 is greater then NUM2"
+else 
+	echo "NUM2 is greater then NUM1"
+fi 
+
+$ chmod +x statement.sh
+$ ./statement.sh
+
+#-------------------------------------------------------------------------------
+10.2. String Comparisons
+#-------------------------------------------------------------------------------
+
+# keyword meaning
+  =     : equal 
+  !=    : not equal 
+  <     : less then 
+  >     : greater then 
+  -n s1 : string s1 is not empty 
+  -z s1 : string s1 is empty 
+
+
+$ which bash > string_statement.sh
+$ vi string_statement.sh
+
+#!/bin/bash
+
+# Declare string S1
+S1="Bash"
+# Declare string S2
+S2="Bash"
+
+if [ $S1 = $S2 ]; then
+	echo "Both Strings are equal"
+else 
+	echo "Strings are NOT equal"
+fi 
+
+$ chmod +x string_statement.sh
+$ ./string_statement.sh

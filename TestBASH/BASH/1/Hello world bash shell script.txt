@@ -1,0 +1,41 @@
+#-------------------------------------------------------------------------------
+1. Hello World Bash Shell Script
+#-------------------------------------------------------------------------------
+
+$ which bash > script.sh
+$ vi script.sh 
+
+script.sh file in
+#!/usr/bash
+echo "Hello World"
+
+$ chmod +x script.sh
+$ ./script.sh
+$ Hello World
+
+
+# First you need to find out where is your bash interpreter located.
+# Enter the following into your command line:
+
+$ which bash
+
+# NOTE: Every bash shell script in this tutorial starts with shebang:"#!" which is not read as a comment.
+# First line is also a place where you put your interpreter which is in this case: /bin/bash.
+
+$ which bash > hello_world.sh
+$ vi hello_world.sh
+
+#!/bin/bash
+# declare STRING variable
+STRING="Hello World"
+#print variable on a screen
+echo $STRING
+
+# Navigate to a directory where your hello_world.sh is located and make the file executable:
+
+$ chmod +x hello_world.sh 
+
+# Now you are ready to execute your first bash script:
+
+$ ./hello_world.sh 
+

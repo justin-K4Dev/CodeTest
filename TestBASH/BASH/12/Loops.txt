@@ -1,0 +1,108 @@
+#-------------------------------------------------------------------------------
+12. Loops
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+12.1. Bash for loop
+#-------------------------------------------------------------------------------
+
+$ which bash > for_loop.sh
+$ vi for_loop.sh
+
+
+#!/bin/bash
+
+# bash for loop
+for f in $( ls /var/ ); do
+	echo $f
+done
+
+$ chmod +x for_loop.sh
+$ ./for_loop.sh
+
+# Running for loop from bash shell command line:
+$ for f in $( ls /var/ ); do echo $f; done
+
+
+#-------------------------------------------------------------------------------
+12.2. Bash while loop
+#-------------------------------------------------------------------------------
+
+$ which bash > while_loop.sh
+$ vi while_loop.sh
+
+
+#!/bin/bash
+
+COUNT=6
+# bash while loop
+while [ $COUNT -gt 0 ]; do
+	echo Value of count is: $COUNT
+	let COUNT=COUNT-1
+done 
+
+$ chmod +x while_loop.sh
+$ ./while_loop.sh
+
+
+
+#-------------------------------------------------------------------------------
+12.3. Bash until loop
+#-------------------------------------------------------------------------------
+
+$ which bash > until_loop.sh
+$ vi until_loop.sh
+
+
+#!/bin/bash
+
+COUNT=0
+# bash until loop
+until [ $COUNT -gt 5 ]; do
+        echo Value of count is: $COUNT
+        let COUNT=COUNT+1
+done 
+
+$ chmod +x until_loop.sh
+$ ./until_loop.sh
+
+
+#-------------------------------------------------------------------------------
+12.4. Control bash loop with
+#-------------------------------------------------------------------------------
+
+# Here is a example of while loop controlled by standard input.
+# Until the redirection chain from STDOUT to STDIN to the read command exists the while loop continues.
+
+$ which bash > script.sh
+$ vi script.sh
+
+#!/bin/bash
+
+# This bash script will locate and replace spaces
+# in the filenames
+DIR="."
+# Controlling a loop with bash read command by redirecting STDOUT as
+# a STDIN to while loop
+# find will not truncate filenames containing spaces
+find $DIR -type f | while read file; do
+
+	# using POSIX class [:space:] to find space in the filename
+	if [[ "$file" = *[[:space:]]* ]]; then
+		# substitute space with "_" character and consequently rename the file
+		mv "$file" `echo $file | tr ' ' '_'`
+	fi;
+# end of while loop
+done
+
+$ touch file
+$ touch file with space
+$ touch file
+$ touch file_with_space
+
+$ chmod +x script.sh
+$ ls -l
+$ ./script.sh
+$ ls -l
+
+

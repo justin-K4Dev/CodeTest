@@ -1,0 +1,124 @@
+#-------------------------------------------------------------------------------
+16. Bash quotes and quotations
+#-------------------------------------------------------------------------------
+
+# Quotations and quotes are important part of bash and bash scripting.
+# Here are some bash quotes and quotations basics.
+
+#-------------------------------------------------------------------------------
+16.1. Escaping Meta characters
+#-------------------------------------------------------------------------------
+
+# Before we start with quotes and quotations we should know something about escaping meta characters.
+# Escaping will suppress a special meaning of meta characters and therefore meta characters will be read by bash literally.
+# To do this we need to use backslash "\" character.
+
+$ which bash > escape_meta.sh
+$ vi escape_meta.sh
+
+#!/bin/bash
+ 
+# Declare bash string variable
+BASH_VAR="Bash Script"
+
+# echo variable BASH_VAR
+echo $BASH_VAR
+
+# when meta character such us "$" is escaped with "\" it will be read literally
+echo \$BASH_VAR 
+
+# backslash has also special meaning and it can be suppressed with yet another "\"
+echo "\\"
+
+$ chmod +x escape_meta.sh
+$ ./escape_meta.sh
+
+
+#-------------------------------------------------------------------------------
+16.2. Single quotes
+#-------------------------------------------------------------------------------
+
+# Single quotes in bash will suppress special meaning of every meta characters.
+# Therefore meta characters will be read literally.
+# It is not possible to use another single quote within two single quotes not even if the single quote is escaped by backslash.
+
+$ which bash > single_quotes.sh
+$ vi single_quotes.sh
+
+#!/bin/bash
+ 
+#Declare bash string variable
+BASH_VAR="Bash Script"
+ 
+# echo variable BASH_VAR
+echo $BASH_VAR
+ 
+# meta characters special meaning in bash is suppressed when  using single quotes 
+echo '$BASH_VAR  "$BASH_VAR"' 
+
+$ chmod +x single_quotes.sh
+$ ./single_quotes.sh
+
+
+#-------------------------------------------------------------------------------
+16.3. Double Quotes
+#-------------------------------------------------------------------------------
+
+# Double quotes in bash will suppress special meaning of every meta characters except "$", "\" and "`".
+# Any other meta characters will be read literally.
+# It is also possible to use single quote within double quotes.
+# If we need to use double quotes within double quotes bash can read them literally when escaping them with "\".
+
+$ which bash > double_quotes.sh
+$ vi double_quotes.sh
+
+#!/bin/bash
+ 
+# Declare bash string variable
+BASH_VAR="Bash Script"
+
+# echo variable BASH_VAR
+echo $BASH_VAR
+
+# meta characters and its special meaning in bash is 
+# suppressed when using double quotes except "$", "\" and "`"
+echo "It's $BASH_VAR  and \"$BASH_VAR\" using backticks: `date`" 
+
+$ chmod +x double_quotes.sh
+$ ./double_quotes.sh
+
+
+#-------------------------------------------------------------------------------
+16.4. Bash quoting with ANSI-C style
+#-------------------------------------------------------------------------------
+
+# There is also another type of quoting and that is ANSI-C.
+# In this type of quoting characters escaped with "\" will gain special meaning according to the ANSI-C standard.
+
+  \a   : alert (bell)
+  \b   : backspace 
+  \e   : an escape character 
+  \f   : form feed 
+  \n   : newline 
+  \r   : carriage return 
+  \t   : horizontal tab 
+  \v   : vertical tab 
+  \\   : backslash 
+  \`   : single quote 
+  \nnn : octal value of characters ( see [http://www.asciitable.com/ ASCII table] )
+  \xnn : hexadecimal value of characters ( see [http://www.asciitable.com/ ASCII table] )
+
+# The syntax fo ansi-c bash quoting is: $''
+
+$ which bash > bash_ansi-c.sh
+$ vi bash_ansi-c.sh
+
+#!/bin/bash
+ 
+# as a example we have used \n as a new line, \x40 is hex value for @
+# and \56 is octal value for .
+echo $'web: www.linuxconfig.org\nemail: web\x40linuxconfig\56org'
+
+$ chmod +x bash_ansi-c.sh
+$ ./bash_ansi-c.sh
+
