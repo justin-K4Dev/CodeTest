@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e9a1423a-083a-4ec0-b466-594034a434b6</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Logic\Advanced Tutorials\Generators.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>TestCode</Name>
+    <RootNamespace>TestPython</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.4</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Logic\Advanced Tutorials\Closoure.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\CodeIntrospection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\Decorators.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\ExceptionHandling.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\Generators.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\ListComprehensions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\MultipleFunctionArguments.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\PartialFunctions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\RegularExpressions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\Serialization.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Advanced Tutorials\Sets.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\BasicStringOperation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\ClassAndObjects.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\Conditions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\Dictionary.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\Functions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\HelloPython.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\BasicCalculation.py" />
+    <Compile Include="Logic\Learn the Basics\Lists.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\Loops.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\ModulesAndPackage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\StringFormat.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Learn the Basics\VariableAndTypes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\TestCode.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logic\Learn the Basics\" />
+    <Folder Include="Logic\Advanced Tutorials\" />
+    <Folder Include="Logic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.4" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
